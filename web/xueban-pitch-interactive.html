@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学伴桌搭 · 让学习被看见、被回应、被坚持 ｜ 中源黑客松 · 学习陪伴赛道</title>
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,SF Pro Display,system-ui,PingFang SC,Microsoft YaHei,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono,ui-monospace,Consolas,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.inset-x-0{left:0;right:0}.-right-16{right:-4rem}.-right-\[26px\]{right:-26px}.-top-16{top:-4rem}.-top-24{top:-6rem}.bottom-0{bottom:0}.left-1\/2{left:50%}.left-3{left:.75rem}.top-0{top:0}.top-1\/2{top:50%}.top-3{top:.75rem}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.ml-2{margin-left:.5rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-11{margin-top:2.75rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.mt-9{margin-top:2.25rem}.mt-\[3px\]{margin-top:3px}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[280px\]{height:280px}.h-\[420px\]{height:420px}.h-\[520px\]{height:520px}.h-\[68px\]{height:68px}.h-auto{height:auto}.h-full{height:100%}.h-px{height:1px}.w-1{width:.25rem}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-9{width:2.25rem}.w-\[26px\]{width:26px}.w-\[280px\]{width:280px}.w-\[860px\]{width:860px}.w-full{width:100%}.min-w-\[280px\]{min-width:280px}.max-w-\[1200px\]{max-width:1200px}.max-w-\[300px\]{max-width:300px}.max-w-\[420px\]{max-width:420px}.max-w-\[440px\]{max-width:440px}.max-w-\[560px\]{max-width:560px}.max-w-\[600px\]{max-width:600px}.max-w-\[620px\]{max-width:620px}.max-w-\[640px\]{max-width:640px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-\[1\.05fr_1\.9fr\]{grid-template-columns:1.05fr 1.9fr}.grid-cols-\[1\.35fr_repeat\(4\2c 1fr\)\]{grid-template-columns:1.35fr repeat(4,1fr)}.grid-rows-2{grid-template-rows:repeat(2,minmax(0,1fr))}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-3\.5{gap:.875rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.gap-8{gap:2rem}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-white\/\[0\.05\]>:not([hidden])~:not([hidden]){border-color:hsla(0,0%,100%,.05)}.overflow-hidden{overflow:hidden}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[11px\]{border-radius:11px}.rounded-\[22px\]{border-radius:22px}.rounded-\[30px\]{border-radius:30px}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.rounded-bl-md{border-bottom-left-radius:.375rem}.rounded-br-md{border-bottom-right-radius:.375rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-\[\#35E5B2\]{--tw-border-opacity:1;border-color:rgb(53 229 178/var(--tw-border-opacity,1))}.border-\[\#35E5B2\]\/20{border-color:rgba(53,229,178,.2)}.border-\[\#35E5B2\]\/25{border-color:rgba(53,229,178,.25)}.border-\[\#FFC46B\]\/20{border-color:rgba(255,196,107,.2)}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/\[0\.045\]{border-color:hsla(0,0%,100%,.045)}.border-white\/\[0\.055\]{border-color:hsla(0,0%,100%,.055)}.border-white\/\[0\.05\]{border-color:hsla(0,0%,100%,.05)}.border-white\/\[0\.06\]{border-color:hsla(0,0%,100%,.06)}.border-white\/\[0\.075\]{border-color:hsla(0,0%,100%,.075)}.border-white\/\[0\.07\]{border-color:hsla(0,0%,100%,.07)}.border-white\/\[0\.08\]{border-color:hsla(0,0%,100%,.08)}.border-white\/\[0\.09\]{border-color:hsla(0,0%,100%,.09)}.bg-\[\#35E5B2\]{--tw-bg-opacity:1;background-color:rgb(53 229 178/var(--tw-bg-opacity,1))}.bg-\[\#35E5B2\]\/10{background-color:rgba(53,229,178,.1)}.bg-\[\#35E5B2\]\/15{background-color:rgba(53,229,178,.15)}.bg-\[\#35E5B2\]\/\[0\.055\]{background-color:rgba(53,229,178,.055)}.bg-\[\#35E5B2\]\/\[0\.06\]{background-color:rgba(53,229,178,.06)}.bg-\[\#35E5B2\]\/\[0\.07\]{background-color:rgba(53,229,178,.07)}.bg-\[\#8BFFD9\]\/70{background-color:rgba(139,255,217,.7)}.bg-\[\#FFC46B\]{--tw-bg-opacity:1;background-color:rgb(255 196 107/var(--tw-bg-opacity,1))}.bg-\[\#FFC46B\]\/10{background-color:rgba(255,196,107,.1)}.bg-black\/35{background-color:rgba(0,0,0,.35)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/45{background-color:hsla(0,0%,100%,.45)}.bg-white\/\[0\.015\]{background-color:hsla(0,0%,100%,.015)}.bg-white\/\[0\.018\]{background-color:hsla(0,0%,100%,.018)}.bg-white\/\[0\.02\]{background-color:hsla(0,0%,100%,.02)}.bg-white\/\[0\.05\]{background-color:hsla(0,0%,100%,.05)}.bg-\[radial-gradient\(ellipse_60\%_100\%_at_50\%_100\%\2c rgba\(53\2c 229\2c 178\2c \.14\)\2c transparent_70\%\)\]{background-image:radial-gradient(ellipse 60% 100% at 50% 100%,rgba(53,229,178,.14),transparent 70%)}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.from-\[\#35E5B2\]{--tw-gradient-from:#35e5b2 var(--tw-gradient-from-position);--tw-gradient-to:rgba(53,229,178,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#35E5B2\]\/\[0\.035\]{--tw-gradient-from:rgba(53,229,178,.035) var(--tw-gradient-from-position);--tw-gradient-to:rgba(53,229,178,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#35E5B2\]\/\[0\.03\]{--tw-gradient-from:rgba(53,229,178,.03) var(--tw-gradient-from-position);--tw-gradient-to:rgba(53,229,178,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white\/\[0\.07\]{--tw-gradient-from:hsla(0,0%,100%,.07) var(--tw-gradient-from-position);--tw-gradient-to:hsla(0,0%,100%,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-\[\#35E5B2\]\/\[0\.03\]{--tw-gradient-to:rgba(53,229,178,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(53,229,178,.03) var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-\[\#0E8F72\]{--tw-gradient-to:#0e8f72 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-white\/\[0\.01\]{--tw-gradient-to:hsla(0,0%,100%,.01) var(--tw-gradient-to-position)}.p-3{padding:.75rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-\[2px\]{padding-top:2px;padding-bottom:2px}.pb-1\.5{padding-bottom:.375rem}.pb-14{padding-bottom:3.5rem}.pb-16{padding-bottom:4rem}.pl-2\.5{padding-left:.625rem}.pr-4{padding-right:1rem}.pt-20{padding-top:5rem}.pt-3\.5{padding-top:.875rem}.pt-4{padding-top:1rem}.pt-\[132px\]{padding-top:132px}.text-center{text-align:center}.text-\[10\.5px\]{font-size:10.5px}.text-\[10px\]{font-size:10px}.text-\[11\.5px\]{font-size:11.5px}.text-\[11px\]{font-size:11px}.text-\[12\.5px\]{font-size:12.5px}.text-\[12\.8px\]{font-size:12.8px}.text-\[12px\]{font-size:12px}.text-\[13\.5px\]{font-size:13.5px}.text-\[13px\]{font-size:13px}.text-\[14\.5px\]{font-size:14.5px}.text-\[14px\]{font-size:14px}.text-\[15\.5px\]{font-size:15.5px}.text-\[15px\]{font-size:15px}.text-\[16\.5px\]{font-size:16.5px}.text-\[17px\]{font-size:17px}.text-\[23px\]{font-size:23px}.text-\[25px\]{font-size:25px}.text-\[26px\]{font-size:26px}.text-\[29px\]{font-size:29px}.text-\[38px\]{font-size:38px}.text-\[40px\]{font-size:40px}.text-\[62px\]{font-size:62px}.text-\[9px\]{font-size:9px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.leading-\[1\.04\]{line-height:1.04}.leading-\[1\.2\]{line-height:1.2}.leading-\[1\.75\]{line-height:1.75}.leading-\[1\.7\]{line-height:1.7}.leading-\[1\.85\]{line-height:1.85}.leading-\[1\.8\]{line-height:1.8}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.12em\]{letter-spacing:.12em}.tracking-\[0\.14em\]{letter-spacing:.14em}.tracking-\[0\.16em\]{letter-spacing:.16em}.tracking-\[0\.18em\]{letter-spacing:.18em}.tracking-\[0\.22em\]{letter-spacing:.22em}.tracking-\[0\.28em\]{letter-spacing:.28em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-\[\#03130F\]{--tw-text-opacity:1;color:rgb(3 19 15/var(--tw-text-opacity,1))}.text-\[\#35E5B2\]{--tw-text-opacity:1;color:rgb(53 229 178/var(--tw-text-opacity,1))}.text-\[\#8BFFD9\]{--tw-text-opacity:1;color:rgb(139 255 217/var(--tw-text-opacity,1))}.text-\[\#8BFFD9\]\/60{color:rgba(139,255,217,.6)}.text-\[\#8BFFD9\]\/70{color:rgba(139,255,217,.7)}.text-\[\#8BFFD9\]\/80{color:rgba(139,255,217,.8)}.text-\[\#8BFFD9\]\/90{color:rgba(139,255,217,.9)}.text-\[\#B9FFE7\]{--tw-text-opacity:1;color:rgb(185 255 231/var(--tw-text-opacity,1))}.text-\[\#C8FFEE\]{--tw-text-opacity:1;color:rgb(200 255 238/var(--tw-text-opacity,1))}.text-\[\#FF8A8A\]{--tw-text-opacity:1;color:rgb(255 138 138/var(--tw-text-opacity,1))}.text-\[\#FFD79B\]{--tw-text-opacity:1;color:rgb(255 215 155/var(--tw-text-opacity,1))}.text-white\/30{color:hsla(0,0%,100%,.3)}.text-white\/35{color:hsla(0,0%,100%,.35)}.text-white\/45{color:hsla(0,0%,100%,.45)}.text-white\/50{color:hsla(0,0%,100%,.5)}.text-white\/55{color:hsla(0,0%,100%,.55)}.text-white\/70{color:hsla(0,0%,100%,.7)}.text-white\/75{color:hsla(0,0%,100%,.75)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0_0_22px_-4px_rgba\(53\2c 229\2c 178\2c \.7\)\]{--tw-shadow:0 0 22px -4px rgba(53,229,178,.7);--tw-shadow-colored:0 0 22px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_0_26px_-6px_rgba\(53\2c 229\2c 178\2c \.9\)\]{--tw-shadow:0 0 26px -6px rgba(53,229,178,.9);--tw-shadow-colored:0 0 26px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_14px_40px_-12px_rgba\(53\2c 229\2c 178\2c \.9\)\]{--tw-shadow:0 14px 40px -12px rgba(53,229,178,.9);--tw-shadow-colored:0 14px 40px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_40px_90px_-40px_rgba\(0\2c 0\2c 0\2c \.95\)\]{--tw-shadow:0 40px 90px -40px rgba(0,0,0,.95);--tw-shadow-colored:0 40px 90px -40px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.blur-\[120px\]{--tw-blur:blur(120px)}.blur-\[120px\],.blur-\[80px\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[80px\]{--tw-blur:blur(80px)}.backdrop-blur-\[2px\]{--tw-backdrop-blur:blur(2px)}.backdrop-blur-\[2px\],.backdrop-blur-sm{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.selection\:bg-\[\#35E5B2\] ::-moz-selection{--tw-bg-opacity:1;background-color:rgb(53 229 178/var(--tw-bg-opacity,1))}.selection\:bg-\[\#35E5B2\] ::selection{--tw-bg-opacity:1;background-color:rgb(53 229 178/var(--tw-bg-opacity,1))}.selection\:text-\[\#04120E\] ::-moz-selection{--tw-text-opacity:1;color:rgb(4 18 14/var(--tw-text-opacity,1))}.selection\:text-\[\#04120E\] ::selection{--tw-text-opacity:1;color:rgb(4 18 14/var(--tw-text-opacity,1))}.selection\:bg-\[\#35E5B2\]::-moz-selection{--tw-bg-opacity:1;background-color:rgb(53 229 178/var(--tw-bg-opacity,1))}.selection\:bg-\[\#35E5B2\]::selection{--tw-bg-opacity:1;background-color:rgb(53 229 178/var(--tw-bg-opacity,1))}.selection\:text-\[\#04120E\]::-moz-selection{--tw-text-opacity:1;color:rgb(4 18 14/var(--tw-text-opacity,1))}.selection\:text-\[\#04120E\]::selection{--tw-text-opacity:1;color:rgb(4 18 14/var(--tw-text-opacity,1))}.hover\:bg-\[\#5DF0C6\]:hover{--tw-bg-opacity:1;background-color:rgb(93 240 198/var(--tw-bg-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}@media (min-width:768px){.md\:col-span-3{grid-column:span 3/span 3}.md\:col-span-4{grid-column:span 4/span 4}.md\:col-span-9{grid-column:span 9/span 9}.md\:block{display:block}.md\:inline-flex{display:inline-flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:1024px){.lg\:col-span-4{grid-column:span 4/span 4}.lg\:col-span-5{grid-column:span 5/span 5}.lg\:col-span-7{grid-column:span 7/span 7}.lg\:col-span-8{grid-column:span 8/span 8}.lg\:flex{display:flex}}@media (min-width:1280px){.xl\:block{display:block}.xl\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.xl\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}</style>
+<style>
+  :root{--tg:#35E5B2;--tg2:#8BFFD9;--warm:#FFC46B}
+  html{scroll-behavior:smooth}
+  body{background:#060B0C;color:#E6F0ED;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01"}
+  .mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-variant-ligatures:none}
+  .grid-bg{
+    background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+    background-size:72px 72px;
+    mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 20%,transparent 78%);
+    -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 20%,transparent 78%);
+  }
+  .vignette{background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(53,229,178,.16),transparent 62%)}
+  .rv{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.075);transition:border-color .35s,transform .35s,box-shadow .35s}
+  .card:hover{border-color:rgba(53,229,178,.34);transform:translateY(-3px);box-shadow:0 18px 46px -22px rgba(53,229,178,.35)}
+  .card-flat{background:rgba(255,255,255,.028);border:1px solid rgba(255,255,255,.07)}
+  .ttl-grad{background:linear-gradient(96deg,#FFFFFF 8%,#C9FBEA 46%,#35E5B2 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hair{background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);height:1px}
+  .dev-wrap{container-type:inline-size}
+  .oled{position:absolute;inset:0;clip-path:polygon(34.8% 34.6%,83.4% 35.4%,80.0% 66.3%,27.4% 65.7%)}
+  .oled-in{position:absolute;left:34.8%;top:34.6%;width:48.6%;height:31.7%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4cqw}
+  .oled-time{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-size:5.5cqw;line-height:1;letter-spacing:.04em;color:#A8FBE0;
+    text-shadow:0 0 .6cqw rgba(53,229,178,.9),0 0 2.4cqw rgba(53,229,178,.45)}
+  .oled-sub{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-size:1.55cqw;letter-spacing:.34em;color:rgba(139,255,217,.72)}
+  .oled-bar{width:52%;height:.9cqw;border-radius:99px;background:rgba(53,229,178,.16);overflow:hidden}
+  .oled-bar i{display:block;height:100%;width:38%;border-radius:99px;background:linear-gradient(90deg,rgba(53,229,178,.5),#8BFFD9);box-shadow:0 0 1.2cqw rgba(53,229,178,.7)}
+  .photo-glow{position:absolute;inset:-8% -6% -12%;background:radial-gradient(ellipse 62% 52% at 50% 58%,rgba(53,229,178,.30),rgba(53,229,178,.06) 55%,transparent 72%);filter:blur(26px);pointer-events:none}
+  .tag{border:1px solid rgba(53,229,178,.28);background:rgba(53,229,178,.08)}
+  .step-line{background:linear-gradient(90deg,rgba(53,229,178,.55),rgba(53,229,178,.15));height:1.5px}
+  .step-line::after{content:'';position:absolute;right:-2px;top:-2.5px;width:5px;height:5px;border-radius:99px;background:rgba(53,229,178,.75)}
+  .bar-row:hover{background:rgba(53,229,178,.05)}
+  .num{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;color:rgba(53,229,178,.72)}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>@media print{.rv{opacity:1!important;transform:none!important}}</style>
+</head>
+<body class="antialiased selection:bg-[#35E5B2] selection:text-[#04120E]">
+
+<!-- ===== NAV ===== -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-[#060B0C]/72 border-b border-white/[0.06]">
+  <div class="max-w-[1200px] mx-auto px-8 h-[68px] flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-9 h-9 rounded-[11px] bg-gradient-to-br from-[#35E5B2] to-[#0E8F72] grid place-items-center shadow-[0_0_22px_-4px_rgba(53,229,178,.7)]">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#03110D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c0-6 3.5-9 8-9-1 6-4 9-8 9Z"/><path d="M12 21c0-5-3-8.5-8-8.5 1 5.5 4 8.5 8 8.5Z"/><path d="M12 21v-4"/></svg>
+      </div>
+      <div class="leading-tight">
+        <div class="mono text-[10px] tracking-[0.22em] text-white/46">中源黑客松 ｜ 学习陪伴赛道</div>
+        <div class="text-[15px] font-semibold tracking-wide">学伴桌搭 <span class="text-white/30 font-normal mx-1">/</span><span class="text-[#8BFFD9]/80 text-[12px] font-normal tracking-wider">DESK COMPANION</span></div>
+      </div>
+    </div>
+    <nav class="hidden lg:flex items-center gap-7 text-[13px] text-white/55">
+      <a href="#need" class="hover:text-white transition">需求</a>
+      <a href="#proto" class="hover:text-white transition">原型能力</a>
+      <a href="#hw" class="hover:text-white transition">硬件映射</a>
+      <a href="#mvp" class="hover:text-white transition">MVP 流程</a>
+      <a href="#value" class="hover:text-white transition">价值验证</a>
+      <a href="#next" class="hover:text-white transition">扩展</a>
+    </nav>
+    <a href="#proto" class="hidden md:inline-flex items-center gap-2 h-9 px-4 rounded-full text-[12.5px] font-medium text-[#03130F] bg-[#35E5B2] hover:bg-[#5DF0C6] transition shadow-[0_0_26px_-6px_rgba(53,229,178,.9)]">
+      看原型演示
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="relative pt-[132px] pb-16 overflow-hidden">
+  <div class="absolute inset-0 grid-bg"></div>
+  <div class="absolute inset-x-0 top-0 h-[520px] vignette"></div>
+  <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[860px] h-[420px] rounded-full bg-[#35E5B2]/12 blur-[120px]"></div>
+
+  <div class="relative max-w-[1200px] mx-auto px-8">
+    <div class="grid grid-cols-12 gap-10 items-center">
+      <div class="col-span-12 lg:col-span-7 rv">
+        <div class="inline-flex items-center gap-2.5 h-8 pl-2.5 pr-4 rounded-full tag mono text-[11px] tracking-[0.14em] text-[#8BFFD9]">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#35E5B2] animate-pulse"></span>
+          中源黑客松 · 学习陪伴特别赛道
+        </div>
+
+        <h1 class="mt-7 text-[62px] leading-[1.04] font-bold tracking-tight">
+          <span class="ttl-grad">学伴桌搭</span>
+        </h1>
+        <p class="mt-4 text-[25px] leading-snug font-medium text-white/88 tracking-tight">
+          让学习被看见、被回应、被坚持。
+        </p>
+        <p class="mt-5 text-[15px] leading-[1.85] text-white/58 max-w-[560px]">
+          一台会等你回来、会为你亮灯、还能直接回答你的桌面小物。<br>
+          摸一下开始专注，离座它会喊你，卡住了按住就能问 ——
+          <span class="text-[#8BFFD9]/90">全程不用碰手机，也不用打开电脑。</span>
+        </p>
+
+        <div class="mt-9 flex items-center gap-3.5">
+          <a href="#proto" class="inline-flex items-center gap-2 h-11 px-6 rounded-full text-[13.5px] font-semibold text-[#03130F] bg-[#35E5B2] hover:bg-[#5DF0C6] transition shadow-[0_14px_40px_-12px_rgba(53,229,178,.9)]">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+            观看 90 秒原型演示
+          </a>
+          <a href="#hw" class="inline-flex items-center gap-2 h-11 px-6 rounded-full text-[13.5px] font-medium text-white/75 border border-white/12 hover:border-white/28 hover:text-white transition">
+            硬件与实现
+          </a>
+        </div>
+
+        <div class="mt-12 grid grid-cols-4 gap-5 max-w-[560px]">
+          <div><div class="mono text-[23px] text-[#8BFFD9] leading-none">25<span class="text-[11px] text-white/35 ml-1">min</span></div><div class="mt-2 text-[11.5px] text-white/46 tracking-wide">一次触摸即开始</div></div>
+          <div><div class="mono text-[23px] text-[#8BFFD9] leading-none">0<span class="text-[11px] text-white/35 ml-1">台</span></div><div class="mt-2 text-[11.5px] text-white/46 tracking-wide">对话不需电脑</div></div>
+          <div><div class="mono text-[23px] text-[#8BFFD9] leading-none">36<span class="text-[11px] text-white/35 ml-1">h</span></div><div class="mt-2 text-[11.5px] text-white/46 tracking-wide">MVP 可现场跑通</div></div>
+          <div><div class="mono text-[23px] text-[#8BFFD9] leading-none">9<span class="text-[11px] text-white/35 ml-1">件</span></div><div class="mt-2 text-[11.5px] text-white/46 tracking-wide">成熟元器件复刻</div></div>
+        </div>
+      </div>
+
+      <!-- device -->
+      <div class="col-span-12 lg:col-span-5 rv">
+        <div class="relative mx-auto max-w-[420px]">
+          <div class="photo-glow"></div>
+          <div class="relative rounded-[30px] border border-white/[0.09] bg-gradient-to-b from-white/[0.07] to-white/[0.01] p-3 backdrop-blur-sm shadow-[0_40px_90px_-40px_rgba(0,0,0,.95)]">
+            <div class="relative rounded-[22px] overflow-hidden">
+              <iframe id="device-demo" title="学伴桌搭 · 可触控网页模型" style="display:block;width:100%;height:340px;border:0" srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot; data-page-node-id=&quot;RMGik7WO4wMI45HG9wv8e8&quot;&gt;
+&lt;head data-page-node-id=&quot;8BRQyjrfCSXasMmrdrOwmw&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot; data-page-node-id=&quot;JGMKiswFyWdfuPuVMMLGlG&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot; data-page-node-id=&quot;6uzMFISTeJCkxRiUEm2KM2&quot;&gt;
+&lt;title&gt;专注启动 · 陪伴提醒 — 桌面小物原型&lt;/title&gt;
+&lt;style&gt;
+  :root{
+    --bg:#070A08;
+    --panel:#0C1210;
+    --panel2:#080E0B;
+    --line:rgba(255,255,255,.075);
+    --ink:#EAF1EC;
+    --ink2:#8B9C94;
+    --ink3:#59665F;
+    --green:#58E0A8;
+    --amber:#F2B457;
+    --glow:#58E0A8;
+    --sans:system-ui,-apple-system,&quot;Segoe UI&quot;,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,sans-serif;
+    --mono:ui-monospace,&quot;SFMono-Regular&quot;,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(80% 46% at 46% -8%, #121D17 0%, transparent 60%), var(--bg);
+    color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh;
+  }
+  .wrap{max-width:1140px;margin:0 auto;padding:38px 26px 52px}
+  @media (max-width:760px){ .wrap{padding:24px 14px 40px} }
+
+  header{margin-bottom:24px}
+  .kicker{font-family:var(--mono);font-size:10px;letter-spacing:.34em;color:var(--ink3);text-transform:uppercase}
+  h1{font-size:27px;font-weight:500;margin:11px 0 8px;letter-spacing:.02em}
+  h1 em{font-style:normal;color:var(--ink3);padding:0 8px}
+  .deck{font-size:13px;color:var(--ink2);margin:0;max-width:60ch}
+
+  .grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:18px;align-items:stretch}
+  @media (max-width:1000px){ .grid{grid-template-columns:1fr} }
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px 18px}
+
+  /* ---------------- 设备卡 ---------------- */
+  .devcard{
+    display:flex;flex-direction:column;border-radius:20px;overflow:hidden;
+    border:1px solid rgba(255,255,255,.09);background:var(--panel);
+    box-shadow:0 34px 70px -40px rgba(0,0,0,.95);
+  }
+  .stage{position:relative;isolation:isolate;display:block;background:#0B0A08;line-height:0}
+  .stage img{display:block;width:100%;height:auto;-webkit-user-select:none;user-select:none;pointer-events:none}
+
+  /* 屏幕：照片里的玻璃是梯形（左边缘 8.9°、右边缘 4.2°），用 clip-path 贴合 */
+  .screen{
+    position:absolute;left:26.2%;top:35.9%;width:56.5%;height:31.06%;z-index:3;
+    overflow:hidden;background:#05080B;
+    clip-path:polygon(14% 0%, 96.6% 0.7%, 99.8% 4.2%, 95.2% 96.5%, 91.6% 99.7%, 3.6% 92.6%, 0.2% 90.5%, 10.1% 3.4%);
+  }
+  .screen canvas{display:block;width:100%;height:100%}
+  .screen::after{
+    content:&quot;&quot;;position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(rgba(0,0,0,.30) .5px, transparent .7px);
+    background-size:2.4px 2.4px;opacity:.55;
+  }
+  .screen::before{
+    content:&quot;&quot;;position:absolute;inset:0;pointer-events:none;z-index:2;
+    background:linear-gradient(157deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,0) 30%);
+  }
+
+  /* 灯带染色层（只在非 ready 状态叠加颜色） */
+  .strip{
+    position:absolute;left:6%;top:81.5%;width:96%;height:11%;z-index:4;
+    border-radius:50%;mix-blend-mode:color;opacity:0;pointer-events:none;
+    transition:opacity .5s ease;filter:blur(3px);
+  }
+  .strip-bloom{
+    position:absolute;left:6%;top:76%;width:96%;height:22%;z-index:4;
+    border-radius:50%;mix-blend-mode:screen;opacity:0;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 72%, var(--glow), transparent 66%);
+    filter:blur(10px);transition:opacity .5s ease, background .5s ease;
+  }
+  .stage.is-away .strip{background:#F5A63C;opacity:.95}
+  .stage.is-paused .strip{background:#C9A227;opacity:.4}
+  .stage.is-done .strip{background:#5FE8B4;opacity:.8}
+  .stage.is-away .strip-bloom{background:radial-gradient(ellipse at 50% 72%, #FFB75E, transparent 66%);animation:stripBreath 1.7s ease-in-out infinite}
+  .stage.is-done .strip-bloom{animation:stripBreath 1.3s ease-in-out infinite}
+  @keyframes stripBreath{0%,100%{opacity:.22}50%{opacity:.95}}
+
+  /* 触摸区热区 + 按下反馈 */
+  .pad{position:absolute;left:45.5%;top:72%;width:20%;height:9.5%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;border-radius:50%}
+  .pad::after{
+    content:&quot;&quot;;position:absolute;inset:0;border-radius:50%;
+    box-shadow:0 0 0 0 rgba(88,224,168,.55), 0 0 26px 4px rgba(88,224,168,.45);
+    opacity:0;transition:opacity .5s ease;
+  }
+  .stage.is-ready .pad::after{opacity:1;animation:padPulse 2.6s ease-in-out infinite}
+  .pad.flash::after{opacity:1;animation:padFlash .55s ease-out}
+  @keyframes padPulse{0%,100%{opacity:.25}50%{opacity:.8}}
+  @keyframes padFlash{0%{opacity:1;transform:scale(.94)}100%{opacity:0;transform:scale(1.12)}}
+
+  .tap{position:absolute;inset:0;z-index:6;border:0;padding:0;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .tap:focus-visible{outline:1px dashed rgba(88,224,168,.6);outline-offset:-6px}
+
+  .bubble{
+    position:absolute;left:50%;top:3%;transform:translate(-50%,5px);z-index:8;
+    background:#EAF1EC;color:#08100C;font-size:11.5px;line-height:1.5;padding:5px 10px;border-radius:9px;
+    white-space:nowrap;pointer-events:none;opacity:0;transition:.22s ease;
+    box-shadow:0 10px 26px rgba(0,0,0,.55);
+  }
+  .bubble::after{content:&quot;&quot;;position:absolute;left:50%;bottom:-3.5px;width:7px;height:7px;background:#EAF1EC;transform:translateX(-50%) rotate(45deg)}
+  .bubble.on{opacity:1;transform:translate(-50%,0)}
+
+  /* 照片下方的控制条（实心，不遮挡灯带） */
+  .devfoot{padding:13px 16px 15px;border-top:1px solid rgba(255,255,255,.07);background:linear-gradient(180deg,#0B1110,#090F0C);flex:1;display:flex;flex-direction:column}
+  .hint{
+    font-family:var(--mono);font-size:9px;letter-spacing:.24em;color:var(--ink3);
+    text-transform:uppercase;margin-bottom:9px;transition:color .3s;
+  }
+  .stage.is-ready ~ .devfoot .hint{color:var(--green)}
+  .hint.live{color:var(--green)}
+  .hint.warn{color:var(--amber)}
+
+  .sensor-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:1px}
+  .sensor-label{font-size:10.5px;color:var(--ink3);letter-spacing:.02em}
+  .sensor-val{font-family:var(--mono);font-size:20px;font-variant-numeric:tabular-nums;line-height:1.25;color:var(--ink)}
+  .sensor-val span{font-size:10px;color:var(--ink3);margin-left:3px}
+  .sensor-state{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--green);padding-bottom:4px}
+  .sensor-state.away{color:var(--amber)}
+
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:18px;background:transparent;cursor:pointer;display:block}
+  input[type=range]::-webkit-slider-runnable-track{height:3px;border-radius:99px;background:#23302A}
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--ink);
+    margin-top:-5px;border:2px solid #080E0B;box-shadow:0 0 0 1px rgba(255,255,255,.24);
+  }
+  input[type=range]::-moz-range-track{height:3px;border-radius:99px;background:#23302A}
+  input[type=range]::-moz-range-thumb{width:12px;height:12px;border:0;border-radius:50%;background:var(--ink)}
+  .scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:8.5px;color:#6C7A72;margin-top:0}
+
+  /* ---------------- 右列 ---------------- */
+  .side{display:flex;flex-direction:column;gap:16px;min-width:0}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:720px){ .duo{grid-template-columns:1fr} }
+
+  .card-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:9px}
+  .card-title{font-size:12px;color:var(--ink3)}
+  .card-title b{color:var(--ink);font-weight:500;font-size:12.5px}
+  .mono{font-family:var(--mono)}
+  .bigtime{font-family:var(--mono);font-size:42px;font-variant-numeric:tabular-nums;letter-spacing:.01em;line-height:1.04}
+  .substate{font-size:11.5px;color:var(--ink3);margin-top:3px;min-height:18px}
+
+  .seg{display:flex;gap:6px;margin-top:13px}
+  .seg button{
+    flex:1;background:var(--panel2);color:var(--ink2);border:1px solid var(--line);
+    border-radius:8px;padding:7px 0;font:inherit;font-size:11.5px;cursor:pointer;transition:.16s;
+  }
+  .seg button:hover{border-color:rgba(255,255,255,.2);color:var(--ink)}
+  .seg button.on{background:rgba(88,224,168,.12);border-color:rgba(88,224,168,.45);color:var(--green)}
+
+  .acts{display:flex;gap:8px;margin-top:12px}
+  button{font:inherit}
+  .primary{flex:1;border:0;border-radius:9px;padding:10px 12px;font-size:13px;cursor:pointer;background:var(--green);color:#06231A;font-weight:500;transition:.16s}
+  .primary:hover{background:#6CEDB6}
+  .primary:disabled{background:#1B2621;color:#4E5D55;cursor:not-allowed}
+  .ghost{background:transparent;color:var(--ink2);border:1px solid var(--line);border-radius:9px;padding:10px 12px;font-size:12.5px;cursor:pointer;transition:.16s}
+  .ghost:hover{border-color:rgba(255,255,255,.22);color:var(--ink)}
+  .ghost:disabled{opacity:.3;cursor:not-allowed}
+
+  .rowline{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 0}
+  .rowline+.rowline{border-top:1px solid rgba(255,255,255,.05)}
+  .rowline .t{font-size:10.5px;color:var(--ink3);line-height:1.5}
+  .rowline .t b{display:block;color:var(--ink);font-weight:400;font-size:12.5px;margin-bottom:1px}
+  .toggle{width:36px;height:20px;border-radius:99px;background:#1B2621;border:1px solid var(--line);position:relative;cursor:pointer;transition:.2s;flex:none;padding:0}
+  .toggle::after{content:&quot;&quot;;position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#6E7C75;transition:.2s}
+  .toggle.on{background:rgba(88,224,168,.2);border-color:rgba(88,224,168,.48)}
+  .toggle.on::after{left:18px;background:var(--green)}
+
+  .today{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:13px;border-top:1px solid rgba(255,255,255,.05)}
+  .today-lbl{font-size:10.5px;color:var(--ink3);flex:none}
+  .pips{display:flex;gap:4px;flex:1}
+  .pips i{width:100%;max-width:14px;height:5px;border-radius:2px;background:#1E2A24}
+  .pips i.on{background:var(--green);box-shadow:0 0 8px rgba(88,224,168,.5)}
+  .today-num{font-family:var(--mono);font-size:10.5px;color:var(--ink3);flex:none}
+
+  .log{list-style:none;margin:0;padding:0;overflow:auto;flex:1;min-height:90px}  .log li{display:flex;gap:9px;padding:5px 0;font-size:11.5px;color:var(--ink2);border-top:1px solid rgba(255,255,255,.045);animation:slidein .25s ease}
+  .log li:first-child{border-top:0}
+  @keyframes slidein{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+  .log time{font-family:var(--mono);font-size:9.5px;color:var(--ink3);flex:none;padding-top:3px}
+  .log .dot{width:5px;height:5px;border-radius:50%;background:var(--green);margin-top:7px;flex:none}
+  .log .dot.amber{background:var(--amber)}
+  .log .dot.gray{background:#3F4C45}
+
+  .bom{display:flex;flex-wrap:wrap;gap:5px;padding-top:11px;margin-top:12px;border-top:1px solid rgba(255,255,255,.05)}
+  .bom span{
+    font-family:var(--mono);font-size:9px;letter-spacing:.03em;color:var(--ink3);
+    border:1px solid var(--line);border-radius:99px;padding:2.5px 7px;white-space:nowrap;
+  }
+  .bom span i{font-style:normal;color:var(--ink2)}
+
+  .logwrap{display:grid;grid-template-columns:minmax(0,1fr) 272px;gap:22px;flex:1;min-height:0}
+  @media (max-width:860px){ .logwrap{grid-template-columns:1fr} }
+  .logcol{display:flex;flex-direction:column;min-height:0}
+  .guide ol{margin:0;padding-left:14px;font-size:10.8px;color:var(--ink2);line-height:1.72}
+  .guide ol li{margin-bottom:6px}
+  .guide ol li::marker{color:var(--ink3);font-family:var(--mono);font-size:9.5px}
+
+  .notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+  @media (max-width:760px){ .notes{grid-template-columns:1fr} }
+  .note{border:1px solid var(--line);border-radius:15px;padding:17px 18px;background:linear-gradient(180deg, rgba(255,255,255,.018), transparent)}
+  .note .num{font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--green);opacity:.85}
+  .note h2{font-size:14.5px;font-weight:500;margin:7px 0 7px}
+  .note p{font-size:12.5px;color:var(--ink2);margin:0;line-height:1.78}
+  .note p b{color:var(--ink);font-weight:400}
+
+  .toast{
+    position:fixed;left:50%;bottom:24px;transform:translate(-50%,8px);
+    background:#EAF1EC;color:#070A08;font-size:11.5px;padding:7px 13px;border-radius:99px;
+    opacity:0;pointer-events:none;transition:.2s;z-index:40;font-family:var(--mono);letter-spacing:.03em;
+  }
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  /* ================================================================
+     人 × 图片：把渲染图当成一台可以摸的设备
+     ================================================================ */
+  .stage{perspective:960px;cursor:default}
+  .rig{
+    position:relative;display:block;transform-style:preserve-3d;
+    transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translate3d(0,var(--dy,0px),0) scale(1.045);
+    transition:transform .55s cubic-bezier(.22,.61,.36,1), filter .7s ease;will-change:transform;
+  }
+  .stage.live .rig{transition:transform .12s linear, filter .7s ease}
+  .stage.idle .rig{filter:brightness(.86) saturate(.94)}
+
+  /* 指针扫过机身的一束光 */
+  .sheen{
+    position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .45s ease;
+    background:radial-gradient(circle at var(--mx,50%) var(--my,38%), rgba(255,255,255,.20), rgba(255,255,255,.06) 24%, transparent 56%);
+    mix-blend-mode:screen;
+  }
+  .stage:hover .sheen{opacity:1}
+
+  /* 机上热区 */
+  .hot{
+    position:absolute;z-index:7;padding:0;border:0;background:transparent;border-radius:9px;
+    cursor:pointer;-webkit-tap-highlight-color:transparent;
+    transition:box-shadow .2s ease, background .2s ease;
+  }
+  .hot:hover,.hot:focus-visible{
+    outline:0;background:rgba(88,224,168,.06);
+    box-shadow:inset 0 0 0 1px rgba(88,224,168,.55), 0 0 24px rgba(88,224,168,.16);
+  }
+  .hot:active{background:rgba(88,224,168,.1)}
+  .hot .lbl{
+    position:absolute;left:50%;top:6px;transform:translate(-50%,-3px);
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;line-height:1.4;
+    color:#E4F7EE;background:rgba(5,12,9,.9);border:1px solid rgba(88,224,168,.4);
+    padding:3px 7px;border-radius:6px;white-space:nowrap;pointer-events:none;
+    opacity:0;transition:.18s ease;box-shadow:0 8px 20px rgba(0,0,0,.5);
+  }
+  .hot .lbl b{color:var(--green);font-weight:400}
+  .hot:hover .lbl,.hot:focus-visible .lbl{opacity:1;transform:translate(-50%,0)}
+  .hot.up .lbl{top:auto;bottom:calc(100% + 5px)}
+  /* 靠右的部位：标签向左伸展，不被卡片裁掉 */
+  .hot.right .lbl{left:auto;right:0;transform:translate(0,-3px)}
+  .hot.right:hover .lbl,.hot.right:focus-visible .lbl{transform:translate(0,0)}
+  /* 可点提示点 */
+  .hot .ping{
+    position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;
+    background:rgba(140,245,197,.95);
+    box-shadow:0 0 0 3px rgba(88,224,168,.13), 0 0 12px 3px rgba(88,224,168,.5);
+    animation:pingSoft 3.2s ease-in-out infinite;transition:opacity .2s;
+  }
+  .hot:hover .ping,.hot:focus-visible .ping{opacity:0}
+  @keyframes pingSoft{0%,100%{opacity:.22;transform:scale(.8)}50%{opacity:.85;transform:scale(1.15)}}
+  .hot.nodot .ping{display:none}
+
+  /* 灯带模式 */
+  .stage.led-on .strip{background:#58E0A8;opacity:.9;animation:none}
+  .stage.led-on .strip-bloom{background:radial-gradient(ellipse at 50% 72%, #58E0A8, transparent 68%);opacity:.62;animation:none}
+  .stage.led-off .strip,.stage.led-off .strip-bloom{opacity:0!important;animation:none!important}
+
+  /* 顶部芽被点亮（纯光效，无机械运动） */
+  .bud-glow{
+    position:absolute;left:38%;top:0%;width:58%;height:30%;z-index:3;pointer-events:none;
+    border-radius:50%;opacity:0;mix-blend-mode:screen;
+    background:radial-gradient(ellipse at 50% 55%, rgba(150,240,180,.55), transparent 62%);
+    filter:blur(6px);transition:opacity .5s ease;
+  }
+  .bud-glow.on{opacity:1}
+
+  /* 图注行 */
+  .tips{display:flex;flex-wrap:wrap;gap:5px 12px;margin-top:9px;padding-top:8px;border-top:1px solid rgba(255,255,255,.055)}
+  .tips span{font-family:var(--mono);font-size:8.5px;letter-spacing:.05em;color:#5D6B64;white-space:nowrap}
+  .tips span i{font-style:normal;color:var(--green);opacity:.8;margin-right:3px}
+  .tips b{color:#8B9C94;font-weight:400}
+
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
+&lt;/style&gt;
+&lt;style&gt;
+html,body{margin:0;padding:0;background:transparent;overflow:hidden}
+.wrap{max-width:none;padding:0}
+.wrap&gt;header,.wrap&gt;footer,.wrap&gt;.notes,.grid&gt;:not(.devcard),.devfoot&gt;:not(#hint){display:none}
+.grid{display:block}
+.devcard{border:0;border-radius:0;box-shadow:none}
+.devfoot{padding:9px 12px}
+#hint{margin:0}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body data-page-node-id=&quot;gGdldXXC9ki5fAv4Gq6nOz&quot;&gt;
+&lt;div class=&quot;wrap&quot; data-page-node-id=&quot;bzEdKh3Epr72DuxbJRiS2Q&quot;&gt;
+
+  &lt;header data-page-node-id=&quot;l6FLBAxBXlcEMxzVF1IuPB&quot;&gt;
+    &lt;div class=&quot;kicker&quot; data-page-node-id=&quot;Q7gkBUwNuh393c7UxWl1D8&quot;&gt;prototype 03 · desk companion&lt;/div&gt;
+    &lt;h1 data-page-node-id=&quot;MpLqXPHARGLSPogCSsCAVE&quot;&gt;专注启动&lt;em data-page-node-id=&quot;BYzqAsqvALGkJLDQZJpu00&quot;&gt;·&lt;/em&gt;陪伴提醒&lt;/h1&gt;
+    &lt;p class=&quot;deck&quot; data-page-node-id=&quot;EqjhkvsPeb3CoPo9GTlStP&quot;&gt;整台设备只有一个动作：触摸。屏幕只做两件事——显示倒计时，和看着你。离开太久，它会亮起呼吸的灯，说一句「我还在等你回来」。&lt;b style=&quot;color:#7FE9BC;font-weight:400&quot;&gt;这张图可以直接上手：指针移上去，它跟着你转、眼睛跟着你看；点它的屏幕、触摸区、灯带、喇叭、小芽，都有反应。&lt;/b&gt;&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;main class=&quot;grid&quot; data-page-node-id=&quot;VvA7zuiZ2bxAD1I3byQ7FV&quot;&gt;
+
+    &lt;section class=&quot;devcard&quot; data-page-node-id=&quot;rLMmyRQXxHpkEkDU59hvFX&quot;&gt;
+      &lt;div class=&quot;stage is-ready&quot; id=&quot;stage&quot; data-page-node-id=&quot;CAwrkxEJHhrdiu7g3OEA0o&quot;&gt;
+        &lt;div class=&quot;bubble&quot; id=&quot;bubble&quot; data-page-node-id=&quot;8fWrijQS32lk1shYns0ghT&quot;&gt;我还在等你回来。&lt;/div&gt;
+        &lt;div class=&quot;rig&quot; id=&quot;rig&quot;&gt;
+        &lt;img id=&quot;devImg&quot; alt=&quot;桌面陪伴小物渲染图&quot; src=&quot;data:image/jpeg;base64,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&quot; data-page-node-id=&quot;qZKlgjpkWS8YWN5dN7B3xm&quot;&gt;
+        &lt;div class=&quot;sheen&quot; id=&quot;sheen&quot; data-page-node-id=&quot;8fWrijQS32lk1shYns0gs1&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;screen&quot; data-page-node-id=&quot;piNrlqQc8QZCw6tbqq7RxU&quot;&gt;&lt;canvas id=&quot;oled&quot; width=&quot;281&quot; height=&quot;200&quot; data-page-node-id=&quot;fXOJ5W6Pc4FNQBjaD4Whnj&quot;&gt;&lt;/canvas&gt;&lt;/div&gt;
+        &lt;div class=&quot;strip-bloom&quot; data-page-node-id=&quot;hCXOLtwfPHxlCnyB3BGtcv&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;strip&quot; id=&quot;stripTint&quot; data-page-node-id=&quot;edIcq1ycZ8CznXjuyDCyWa&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;pad&quot; id=&quot;pad&quot; data-page-node-id=&quot;kC7OKcC3eExap0z3tf5BCi&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;bud-glow&quot; id=&quot;budGlow&quot;&gt;&lt;/div&gt;
+
+        &lt;!-- ↓↓↓ 图上的五个可交互部位 ↓↓↓ --&gt;
+        &lt;button class=&quot;hot nodot up&quot; id=&quot;hotScreen&quot; data-k=&quot;screen&quot; style=&quot;left:32%;top:34.2%;width:51.4%;height:32.3%&quot; aria-label=&quot;屏幕：点击切换屏幕显示页&quot;&gt;
+          &lt;span class=&quot;ping&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot;&gt;&lt;b&gt;0.96″ OLED&lt;/b&gt; · 点一下换页&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;hot&quot; id=&quot;hotTouch&quot; data-k=&quot;touch&quot; style=&quot;left:32.5%;top:66%;width:26%;height:12%&quot; aria-label=&quot;触摸区：开始或暂停专注&quot;&gt;
+          &lt;span class=&quot;ping&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot;&gt;&lt;b&gt;TTP223&lt;/b&gt; 触摸 · 点一下计时&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;hot up nodot&quot; id=&quot;hotLed&quot; data-k=&quot;led&quot; style=&quot;left:10%;top:82.4%;width:80%;height:8%&quot; aria-label=&quot;灯带：切换灯效&quot;&gt;
+          &lt;span class=&quot;ping&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot;&gt;&lt;b&gt;WS2812&lt;/b&gt; 灯带 · 换个灯效&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;hot right&quot; id=&quot;hotSpk&quot; data-k=&quot;spk&quot; style=&quot;left:93%;top:53%;width:7%;height:15%&quot; aria-label=&quot;喇叭：说一句等你回来&quot;&gt;
+          &lt;span class=&quot;ping&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot;&gt;&lt;b&gt;喇叭&lt;/b&gt; 说一句&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;hot&quot; id=&quot;hotBud&quot; data-k=&quot;bud&quot; style=&quot;left:48%;top:5%;width:50%;height:20%&quot; aria-label=&quot;顶部小芽：只发光的情绪灯&quot;&gt;
+          &lt;span class=&quot;ping&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot;&gt;&lt;b&gt;顶部小芽&lt;/b&gt; 只发光，不摆动&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;button class=&quot;tap&quot; id=&quot;touch&quot; aria-label=&quot;触摸机身，开始或暂停专注&quot; data-page-node-id=&quot;dY0k15fcrjELinoFwS0vcx&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;devfoot&quot; data-page-node-id=&quot;FGYKT16iRkXbONWsln8UKY&quot;&gt;
+        &lt;div class=&quot;hint&quot; id=&quot;hint&quot; data-page-node-id=&quot;d32jg9ygXzlJVoxzpsi5Up&quot;&gt;触摸机身 · 开始专注&lt;/div&gt;
+        &lt;div class=&quot;sensor-head&quot; data-page-node-id=&quot;ZS55eHM7TKrzmrvo9mGfr0&quot;&gt;
+          &lt;div data-page-node-id=&quot;DvofsO6Kc0cQWrWC1wTply&quot;&gt;
+            &lt;div class=&quot;sensor-label&quot; data-page-node-id=&quot;eCyoSIWEg8rGcUVpZZaDA1&quot;&gt;超声波测距 · 拖动模拟&lt;/div&gt;
+            &lt;div class=&quot;sensor-val&quot; data-page-node-id=&quot;BQhFXsCXCT8Fz2UpT5Mey7&quot;&gt;&lt;b id=&quot;distVal&quot; style=&quot;font-weight:400&quot; data-page-node-id=&quot;SrAi5c7ZLPCNu618qbJ5yl&quot;&gt;42&lt;/b&gt;&lt;span data-page-node-id=&quot;haTAPabF58sBgwiD3ZN7sl&quot;&gt;cm&lt;/span&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;sensor-state&quot; id=&quot;seatState&quot; data-page-node-id=&quot;8vKlF9zKCw2C4JrHlLETZ1&quot;&gt;在座&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type=&quot;range&quot; id=&quot;dist&quot; min=&quot;15&quot; max=&quot;150&quot; value=&quot;42&quot; aria-label=&quot;模拟座位距离&quot; data-page-node-id=&quot;KTI9sIeFMCgAy4OIDxzJUS&quot;&gt;
+        &lt;div class=&quot;scale&quot; data-page-node-id=&quot;9W2qIousbuI1PLPDAkMm4m&quot;&gt;&lt;span data-page-node-id=&quot;hknszsMfbak51SXKRQ6MPq&quot;&gt;15 贴近&lt;/span&gt;&lt;span data-page-node-id=&quot;sBGGM4kQMPThgA9RGSKXAV&quot;&gt;80 判定线&lt;/span&gt;&lt;span data-page-node-id=&quot;R7LXQdUNK2H2LQyhVGInh1&quot;&gt;150 离开&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;tips&quot;&gt;
+          &lt;span&gt;&lt;i&gt;图上直接点&lt;/i&gt;&lt;b&gt;屏幕&lt;/b&gt;换页&lt;/span&gt;
+          &lt;span&gt;&lt;b&gt;触摸区&lt;/b&gt;计时&lt;/span&gt;
+          &lt;span&gt;&lt;b&gt;灯带&lt;/b&gt;调光&lt;/span&gt;
+          &lt;span&gt;&lt;b&gt;喇叭&lt;/b&gt;说话&lt;/span&gt;
+          &lt;span&gt;&lt;b&gt;小芽&lt;/b&gt;发光&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;div class=&quot;side&quot; data-page-node-id=&quot;jBaXtUICVfHDAhKMNuDS9H&quot;&gt;
+
+      &lt;div class=&quot;duo&quot; data-page-node-id=&quot;PkIBl7Gf8wIr5KbB8p7Q7y&quot;&gt;
+
+        &lt;section class=&quot;card&quot; data-page-node-id=&quot;JHpwwpiYkTJnbCr7tyHj7c&quot;&gt;
+          &lt;div class=&quot;card-head&quot; data-page-node-id=&quot;VhmwrLCuGE5awEX0ut6kub&quot;&gt;
+            &lt;div class=&quot;card-title&quot; data-page-node-id=&quot;oq5DnMvmN9Rmt0ioMWK0Fz&quot;&gt;&lt;b data-page-node-id=&quot;Eht9II8NPUBgGVnZEwzgMw&quot;&gt;① 专注启动&lt;/b&gt; · 番茄钟&lt;/div&gt;
+            &lt;div class=&quot;mono&quot; style=&quot;font-size:10.5px;color:var(--ink3)&quot; id=&quot;pomCount&quot; data-page-node-id=&quot;fze95kDbSSCxkkVGiFoZiK&quot;&gt;今日 0 个&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bigtime&quot; id=&quot;timeText&quot; data-page-node-id=&quot;lqy8fFCeWwqxYJ6Ury9lxV&quot;&gt;25:00&lt;/div&gt;
+          &lt;div class=&quot;substate&quot; id=&quot;subText&quot; data-page-node-id=&quot;Fta5X0SbvHP9E0Zs3YbrRM&quot;&gt;等待触摸&lt;/div&gt;
+          &lt;div class=&quot;seg&quot; id=&quot;seg&quot; data-page-node-id=&quot;PChPho0H2cGVvUQK4qjydK&quot;&gt;
+            &lt;button data-min=&quot;25&quot; class=&quot;on&quot; data-page-node-id=&quot;LzBIcWB5FL1IZ7vK7LjVsW&quot;&gt;25 分&lt;/button&gt;
+            &lt;button data-min=&quot;5&quot; data-page-node-id=&quot;x7FfSVJ0Q0nAuKq6Kd3tHQ&quot;&gt;5 分&lt;/button&gt;
+            &lt;button data-min=&quot;1&quot; data-page-node-id=&quot;LzKUdtZPFuC5XqQUYIPcqQ&quot;&gt;1 分（演示）&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;acts&quot; data-page-node-id=&quot;hoIYCKDznDeAE9enB5Ccdn&quot;&gt;
+            &lt;button class=&quot;primary&quot; id=&quot;mainBtn&quot; data-page-node-id=&quot;cF4hIHVuSdeHcBSZBVYeTV&quot;&gt;开始专注&lt;/button&gt;
+            &lt;button class=&quot;ghost&quot; id=&quot;endBtn&quot; disabled data-page-node-id=&quot;B5VP8EbM8nSKAl6SJ24b0S&quot;&gt;结束&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;today&quot; data-page-node-id=&quot;hndfaUfkYg8HeykZdzGCFL&quot;&gt;
+            &lt;span class=&quot;today-lbl&quot; data-page-node-id=&quot;qVYXMwX3FxisMB7seUQBTS&quot;&gt;今日番茄&lt;/span&gt;
+            &lt;span class=&quot;pips&quot; id=&quot;pips&quot; data-page-node-id=&quot;F8vfGf3vSgBLEGsq3P5BCh&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;today-num&quot; id=&quot;todayNum&quot; data-page-node-id=&quot;xIE2SqZtgmV7DXGVk5V3cr&quot;&gt;0 / 8&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;card&quot; data-page-node-id=&quot;054wJzj3nfOdXLrIPNLDeG&quot;&gt;
+          &lt;div class=&quot;card-head&quot; data-page-node-id=&quot;7eUipNmpBcB79ho1qAyB2H&quot;&gt;
+            &lt;div class=&quot;card-title&quot; data-page-node-id=&quot;noTvkvSwXnbW4d2WyFEiVP&quot;&gt;&lt;b data-page-node-id=&quot;PEJgaPd4rEVif37f3FecRy&quot;&gt;② 陪伴提醒&lt;/b&gt; · 离座检测&lt;/div&gt;
+            &lt;div class=&quot;mono&quot; style=&quot;font-size:10.5px;color:var(--ink3)&quot; id=&quot;thLabel&quot; data-page-node-id=&quot;DDvnuVlb295IZpsVEi43lC&quot;&gt;30 秒&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;rowline&quot; data-page-node-id=&quot;g4hpgN8gZzaoyteeYD7B9e&quot;&gt;
+            &lt;div class=&quot;t&quot; data-page-node-id=&quot;gZnrYRdpzpD6c5uV13kKgW&quot;&gt;&lt;b data-page-node-id=&quot;4MLccoOWc0SJA22bRdwwtR&quot;&gt;在座检测&lt;/b&gt;离座后灯带呼吸、喇叭说话&lt;/div&gt;
+            &lt;button class=&quot;toggle on&quot; id=&quot;sensorToggle&quot; aria-label=&quot;开关在座检测&quot; data-page-node-id=&quot;Ju0okKHE8TTewATHSzjme6&quot;&gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;rowline&quot; data-page-node-id=&quot;0Pnw0gZbGdE8xum67CyP0S&quot;&gt;
+            &lt;div class=&quot;t&quot; data-page-node-id=&quot;nuhaR8LBwPT9Cf9Hil6gXa&quot;&gt;&lt;b data-page-node-id=&quot;wcG2q9lvGeN8HqyWiLWewS&quot;&gt;自动感应&lt;/b&gt;鼠标键盘活动＝人在座位&lt;/div&gt;
+            &lt;button class=&quot;toggle on&quot; id=&quot;autoToggle&quot; aria-label=&quot;开关自动感应&quot; data-page-node-id=&quot;QmRNAhefXbMP9WjkUxmkKH&quot;&gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;rowline&quot; data-page-node-id=&quot;H0wsEUSydYsjMDHmisuxtD&quot;&gt;
+            &lt;div class=&quot;t&quot; data-page-node-id=&quot;Ob9hinYzLRVOrNgKsZy3w9&quot;&gt;&lt;b data-page-node-id=&quot;FxRGqWTIuciPFnatciU9PT&quot;&gt;语音&lt;/b&gt;念一句「我还在等你回来」&lt;/div&gt;
+            &lt;button class=&quot;toggle on&quot; id=&quot;soundToggle&quot; aria-label=&quot;开关语音&quot; data-page-node-id=&quot;OZ17e1bQZOVgSbXpFIxZ0r&quot;&gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div style=&quot;margin-top:7px&quot; data-page-node-id=&quot;pm0Pkc58Fyfait5EGIoETY&quot;&gt;
+            &lt;div class=&quot;sensor-label&quot; data-page-node-id=&quot;PlGxNz3sSjwf2NmPdU2ZlK&quot;&gt;离座多久后提醒&lt;/div&gt;
+            &lt;input type=&quot;range&quot; id=&quot;thRange&quot; min=&quot;5&quot; max=&quot;90&quot; step=&quot;5&quot; value=&quot;30&quot; aria-label=&quot;离座提醒阈值&quot; data-page-node-id=&quot;bvDzy0uEW8oK9zIMfPfzn9&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;acts&quot; data-page-node-id=&quot;jAgHryk1BFFb8HxCVipJDG&quot;&gt;
+            &lt;button class=&quot;ghost&quot; id=&quot;awayBtn&quot; style=&quot;flex:1&quot; data-page-node-id=&quot;1tm2gjNDigdIbVB0ZF2Urf&quot;&gt;模拟离座&lt;/button&gt;
+            &lt;button class=&quot;ghost&quot; id=&quot;voiceBtn&quot; style=&quot;flex:1&quot; data-page-node-id=&quot;zPkdGnSjonNeRzvMRQQ70x&quot;&gt;试听语音&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+
+      &lt;/div&gt;
+
+      &lt;section class=&quot;card&quot; style=&quot;display:flex;flex-direction:column&quot; data-page-node-id=&quot;nBJfTFjPKhCzEwDdQuyYgL&quot;&gt;
+        &lt;div class=&quot;logwrap&quot; data-page-node-id=&quot;D8sH4Emamkeg4FBkiuKktS&quot;&gt;
+          &lt;div class=&quot;logcol&quot; data-page-node-id=&quot;G8fnXXDz2Q4yvSTVsSBeNn&quot;&gt;
+            &lt;div class=&quot;card-head&quot; data-page-node-id=&quot;CCN9TxJioQgPc5cO4MDFbA&quot;&gt;
+              &lt;div class=&quot;card-title&quot; data-page-node-id=&quot;MBarNNb5LcfefXFZ34xYAz&quot;&gt;&lt;b data-page-node-id=&quot;uVp2DkPzGJoHkMhkpmDYWe&quot;&gt;行为记录&lt;/b&gt;&lt;/div&gt;
+              &lt;div class=&quot;mono&quot; style=&quot;font-size:10.5px;color:var(--ink3)&quot; data-page-node-id=&quot;xn9qkJ8uvyqJhK4TNlAn6P&quot;&gt;最近 8 条&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;log&quot; id=&quot;log&quot; data-page-node-id=&quot;pWg8LRoQl7TzHd1qIunYCh&quot;&gt;&lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;guide&quot; data-page-node-id=&quot;ScxaEBGHBEP7tq8ti1hxry&quot;&gt;
+            &lt;div class=&quot;card-head&quot; data-page-node-id=&quot;25Pv3eveIEEODr1ZeDRuzD&quot;&gt;&lt;div class=&quot;card-title&quot; data-page-node-id=&quot;WskOeoy9iVZIiIfIacc9mt&quot;&gt;&lt;b data-page-node-id=&quot;L4yDd4Z0Yw0kusNhKoiFp0&quot;&gt;30 秒演示&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;ol data-page-node-id=&quot;8L2NrVZ0qoa2fpM4elZInC&quot;&gt;
+              &lt;li data-page-node-id=&quot;jhuRiWDZGxrbdAYnEukl0R&quot;&gt;触摸机身（照片上方的圆形触摸区），倒计时开始。&lt;/li&gt;
+              &lt;li data-page-node-id=&quot;HTRjuVPcBfOEd1IpAZA8SL&quot;&gt;把滑块拖过 80cm，等满设定秒数，灯带会呼吸。&lt;/li&gt;
+              &lt;li data-page-node-id=&quot;A5yJdvXxeM2SAJ5GypyaUq&quot;&gt;动一下鼠标，或把滑块拖回来，它就说「你回来了」。&lt;/li&gt;
+              &lt;li data-page-node-id=&quot;X23aXgb3As64fhi6lP1G3x&quot;&gt;选「1 分（演示）」可以当场跑完一整个番茄。&lt;/li&gt;
+              &lt;li&gt;图上五个部位都能点：屏幕换页、触摸计时、灯带三档、喇叭说话、小芽发光。&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bom&quot; data-page-node-id=&quot;iGoZMxg34MxFHIWGiaGy7P&quot;&gt;
+          &lt;span data-page-node-id=&quot;vaFzVbioBDpYMeMTHNOydo&quot;&gt;&lt;i data-page-node-id=&quot;6MnMPCrb8lLEgaOQS1ZE5R&quot;&gt;0.96″&lt;/i&gt; OLED&lt;/span&gt;&lt;span data-page-node-id=&quot;tQ7QEqwvk8PXSu4I4NyOG2&quot;&gt;&lt;i data-page-node-id=&quot;d2FXRSM9iZwCyVs5EzooPj&quot;&gt;TTP223&lt;/i&gt; 触摸&lt;/span&gt;&lt;span data-page-node-id=&quot;C0dgPzAB5WQzytpBC2lnfS&quot;&gt;&lt;i data-page-node-id=&quot;vXCuHstSQi0k2EDhmc4e3e&quot;&gt;WS2812&lt;/i&gt; 灯带&lt;/span&gt;
+          &lt;span data-page-node-id=&quot;DA8NL9HkmZqzlsFaQDIvjp&quot;&gt;&lt;i data-page-node-id=&quot;2zvqCDz3TbTxVX1PmHJ9f4&quot;&gt;HC-SR04&lt;/i&gt; 超声波&lt;/span&gt;&lt;span data-page-node-id=&quot;5nSlMSvPojgZgA628CHS1S&quot;&gt;&lt;i data-page-node-id=&quot;cxrwRPYozp6kJqUzzaYqKD&quot;&gt;MAX98357&lt;/i&gt; + 3W 喇叭&lt;/span&gt;&lt;span data-page-node-id=&quot;QEUPWtoWrIwcpsfmNlMEm7&quot;&gt;&lt;i data-page-node-id=&quot;zJdo2tBSzubq2hed19BAad&quot;&gt;ESP32-S3&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+    &lt;/div&gt;
+  &lt;/main&gt;
+
+  &lt;div class=&quot;notes&quot; data-page-node-id=&quot;pJKxLjSIz8dFpx5v0jtBjU&quot;&gt;
+    &lt;div class=&quot;note&quot; data-page-node-id=&quot;5fn2oKEsB30kZrAIvExAX7&quot;&gt;
+      &lt;div class=&quot;num&quot; data-page-node-id=&quot;2Z2yQt84CGLRjjTGGLGpjV&quot;&gt;① FOCUS START&lt;/div&gt;
+      &lt;h2 data-page-node-id=&quot;4erVOYZOQsnYnRMRAJKLYo&quot;&gt;专注启动 — 解决「开始困难」&lt;/h2&gt;
+      &lt;p data-page-node-id=&quot;xMsHmZevyiA9PIurYcvoOk&quot;&gt;触摸一下即开始 25 分钟番茄钟，&lt;b data-page-node-id=&quot;dnA0kJQQFjW696NCzmj2m6&quot;&gt;OLED 显示倒计时&lt;/b&gt;。它把「要不要开始」的决策成本压缩成一个动作：&lt;b data-page-node-id=&quot;5jcCz0WDjODbaqSea4gecB&quot;&gt;动一下手，或者什么都不做&lt;/b&gt;。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;note&quot; data-page-node-id=&quot;JBkvewGvmmkn15hVkLZY9D&quot;&gt;
+      &lt;div class=&quot;num&quot; data-page-node-id=&quot;OhE5lMQSvyqePJ4gQC0bKg&quot;&gt;② COMPANION ALERT&lt;/div&gt;
+      &lt;h2 data-page-node-id=&quot;6FeMVjebAF3r2FVhWlKHW9&quot;&gt;陪伴提醒 — 解决「容易分心」&lt;/h2&gt;
+      &lt;p data-page-node-id=&quot;KqkXko4elWEzTdyHs58PRx&quot;&gt;超声波检测你是否在座：离座超过设定时长，&lt;b data-page-node-id=&quot;9dlnRZpVvkKLu0sFttbfXU&quot;&gt;灯带转为呼吸&lt;/b&gt;、喇叭播放一句&lt;b data-page-node-id=&quot;8faxyekzyPuaMz3lLojgVT&quot;&gt;「我还在等你回来」&lt;/b&gt;，而不是冷冰冰的报时。&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;toast&quot; id=&quot;toast&quot; data-page-node-id=&quot;YJzEJzHYRHJeyuHJQOxFYY&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function () {
+  &quot;use strict&quot;;
+  var $ = function (s) { return document.querySelector(s); };
+
+  /* ---------------- 5x7 点阵字模 ---------------- */
+  var FONT = {
+    &quot;0&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;10011&quot;,&quot;10101&quot;,&quot;11001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;1&quot;:[&quot;00100&quot;,&quot;01100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;01110&quot;],
+    &quot;2&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;00001&quot;,&quot;00010&quot;,&quot;00100&quot;,&quot;01000&quot;,&quot;11111&quot;],
+    &quot;3&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;00001&quot;,&quot;00110&quot;,&quot;00001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;4&quot;:[&quot;00010&quot;,&quot;00110&quot;,&quot;01010&quot;,&quot;10010&quot;,&quot;11111&quot;,&quot;00010&quot;,&quot;00010&quot;],
+    &quot;5&quot;:[&quot;11111&quot;,&quot;10000&quot;,&quot;11110&quot;,&quot;00001&quot;,&quot;00001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;6&quot;:[&quot;00110&quot;,&quot;01000&quot;,&quot;10000&quot;,&quot;11110&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;7&quot;:[&quot;11111&quot;,&quot;00001&quot;,&quot;00010&quot;,&quot;00100&quot;,&quot;01000&quot;,&quot;01000&quot;,&quot;01000&quot;],
+    &quot;8&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;01110&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;9&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;01111&quot;,&quot;00001&quot;,&quot;00010&quot;,&quot;01100&quot;],
+    &quot;:&quot;:[&quot;00000&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00000&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00000&quot;],
+    &quot;H&quot;:[&quot;10001&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;11111&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;10001&quot;],
+    &quot;I&quot;:[&quot;11111&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;00100&quot;,&quot;11111&quot;],
+    &quot;O&quot;:[&quot;01110&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;10001&quot;,&quot;01110&quot;],
+    &quot;K&quot;:[&quot;10001&quot;,&quot;10010&quot;,&quot;10100&quot;,&quot;11000&quot;,&quot;10100&quot;,&quot;10010&quot;,&quot;10001&quot;],
+    &quot; &quot;:[&quot;00000&quot;,&quot;00000&quot;,&quot;00000&quot;,&quot;00000&quot;,&quot;00000&quot;,&quot;00000&quot;,&quot;00000&quot;]
+  };
+
+  var cv = $(&quot;#oled&quot;), ctx = cv.getContext(&quot;2d&quot;);
+  var CW = 281, CH = 200;
+  var CELL = CW / 65;
+  var GAP = 0.8;
+
+  function blk(cx, cy, w, h, col) {
+    ctx.fillStyle = col;
+    ctx.fillRect(cx * CELL, cy * CELL, Math.max(1, w * CELL - GAP), Math.max(1, h * CELL - GAP));
+  }
+  function textS(str, x, y, s, col) {
+    var px = CELL * s;
+    ctx.fillStyle = col;
+    var cx = x;
+    for (var i = 0; i &lt; str.length; i++) {
+      var g = FONT[str.charAt(i)];
+      if (g) for (var r = 0; r &lt; 7; r++) for (var c = 0; c &lt; 5; c++)
+        if (g[r].charAt(c) === &quot;1&quot;)
+          ctx.fillRect(cx * CELL + c * px, y * CELL + r * px, Math.max(1, px - 1.1), Math.max(1, px - 1.1));
+      cx += 6 * s;
+    }
+  }
+
+  /* ---------------- 状态 ---------------- */
+  var S = {
+    mode: &quot;ready&quot;, away: false,
+    duration: 25 * 60 * 1000, remain: 25 * 60 * 1000,
+    last: 0, pomDone: 0,
+    sound: true, sensorOn: true, autoSense: true,
+    threshold: 30, dist: 42,
+    lastAct: Date.now(), leaveAt: null, autoAway: false,
+    page: 0, led: &quot;auto&quot;, gaze: 0, gazeY: 0, gazeQ: 0, bud: 0
+  };
+  var AWAY_CM = 80;
+
+  /* ---------------- 声音 ---------------- */
+  var actx = null;
+  function ensureAudio() {
+    if (!actx) { var AC = window.AudioContext || window.webkitAudioContext; if (AC) actx = new AC(); }
+    if (actx &amp;&amp; actx.state === &quot;suspended&quot;) actx.resume();
+  }
+  function tone(freq, start, dur, gain) {
+    if (!actx) return;
+    var o = actx.createOscillator(), g = actx.createGain();
+    o.type = &quot;sine&quot;; o.frequency.value = freq;
+    var t0 = actx.currentTime + start;
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(gain || 0.05, t0 + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g); g.connect(actx.destination);
+    o.start(t0); o.stop(t0 + dur + 0.05);
+  }
+  var voice = null, voicesReady = false;
+  function pickVoice() {
+    if (!(&quot;speechSynthesis&quot; in window)) return null;
+    if (!voicesReady) {
+      var vs = window.speechSynthesis.getVoices() || [];
+      for (var i = 0; i &lt; vs.length; i++) if ((vs[i].lang || &quot;&quot;).toLowerCase().indexOf(&quot;zh&quot;) === 0) voice = vs[i];
+      if (vs.length) voicesReady = true;
+    }
+    return voice;
+  }
+  if (&quot;speechSynthesis&quot; in window) {
+    try { window.speechSynthesis.onvoiceschanged = function () { voicesReady = false; pickVoice(); }; } catch (e) {}
+  }
+
+  var bubbleTimer = null;
+  function bubble(text) {
+    var b = $(&quot;#bubble&quot;);
+    b.textContent = text;
+    b.classList.add(&quot;on&quot;);
+    clearTimeout(bubbleTimer);
+    bubbleTimer = setTimeout(function () { b.classList.remove(&quot;on&quot;); }, 3800);
+  }
+  function speak(text, force) {
+    if (!S.sound &amp;&amp; !force) return;
+    tone(880, 0, 0.12, 0.03);
+    if (!(&quot;speechSynthesis&quot; in window)) return;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = &quot;zh-CN&quot;; u.rate = 1.0; u.pitch = 1.1; u.volume = 0.95;
+      var v = pickVoice(); if (v) u.voice = v;
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
+  }
+
+  /* ---------------- 日志 ---------------- */
+  function now() {
+    var d = new Date();
+    return (&quot;0&quot; + d.getHours()).slice(-2) + &quot;:&quot; + (&quot;0&quot; + d.getMinutes()).slice(-2) + &quot;:&quot; + (&quot;0&quot; + d.getSeconds()).slice(-2);
+  }
+  function log(text, tone_) {
+    var ul = $(&quot;#log&quot;), li = document.createElement(&quot;li&quot;);
+    li.innerHTML = &#x27;&lt;span class=&quot;dot &#x27; + (tone_ || &quot;&quot;) + &#x27;&quot;&gt;&lt;/span&gt;&lt;time&gt;&#x27; + now() + &quot;&lt;/time&gt;&lt;span&gt;&quot; + text + &quot;&lt;/span&gt;&quot;;
+    ul.insertBefore(li, ul.firstChild);
+    while (ul.children.length &gt; 8) ul.removeChild(ul.lastChild);
+  }
+  var toastTimer = null;
+  function toast(t) {
+    var el = $(&quot;#toast&quot;);
+    el.textContent = t; el.classList.add(&quot;on&quot;);
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove(&quot;on&quot;); }, 1900);
+  }
+
+  /* ---------------- 屏幕 ---------------- */
+  var COL = { ready: &quot;#8FEFFF&quot;, focus: &quot;#8FEFFF&quot;, paused: &quot;#F5CC7A&quot;, away: &quot;#F5B968&quot;, done: &quot;#9BF3CC&quot; };
+  function screenState() { return (S.mode === &quot;focus&quot; &amp;&amp; S.away) ? &quot;away&quot; : S.mode; }
+  function fmt(ms) {
+    var s = Math.max(0, Math.ceil(ms / 1000));
+    return (&quot;0&quot; + Math.floor(s / 60)).slice(-2) + &quot;:&quot; + (&quot;0&quot; + (s % 60)).slice(-2);
+  }
+
+  var CX = 32.5;
+
+  /* 眼睛：dot=圆点，shut=⌒ 闭合，happy=∧ */
+  function eyes(cy, kind, col, spread, size) {
+    var sp = spread || 9, r = size || 2.2;
+    [-sp, sp].forEach(function (off) {
+      var ex = CX + off;
+      if (kind === &quot;dot&quot;) { blk(ex - r / 2 + S.gaze, cy + S.gazeY, r, r, col); return; }
+      var dep = kind === &quot;happy&quot; ? 1.9 : 1.5;
+      for (var k = 0; k &lt;= 6; k++) {
+        var t = (k / 6) * 2 - 1;
+        var y = kind === &quot;happy&quot; ? cy + dep * Math.abs(t) : cy + dep * t * t;
+        blk(ex - 3 + k, y, 1, 1, col);
+      }
+    });
+  }
+  /* 嘴：∪ 微笑（y 中间更低），flat 一字 */
+  function mouth(cy, kind, col, wide) {
+    if (kind === &quot;flat&quot;) {
+      var fw = wide || 9;
+      for (var k = 0; k &lt; fw; k++) blk(CX - fw / 2 + k, cy, 1, 1, col);
+      return;
+    }
+    var w = wide || (kind === &quot;big&quot; ? 13 : 11), dep = kind === &quot;big&quot; ? 3.4 : 2.2;
+    for (var i = 0; i &lt;= w; i++) {
+      var t = (i / w) * 2 - 1;
+      blk(CX - w / 2 + i, cy + dep - dep * t * t, 1, 1, col);
+    }
+  }
+  function cheeks(cy, col) {
+    blk(CX - 15, cy, 2, 1.4, col); blk(CX + 13, cy, 2, 1.4, col);
+  }
+
+  var lastKey = &quot;&quot;;
+  /* 右上角三颗翻页指示点 */
+  function pageDots(col) {
+    for (var d = 0; d &lt; 3; d++) blk(56.6 + d * 2.8, 2.9, 1.8, 1.8, d === S.page ? col : &quot;#2B3A40&quot;);
+  }
+  function heart(x, y, col) {
+    var m = [&quot;0110110&quot;, &quot;1111111&quot;, &quot;1111111&quot;, &quot;0111110&quot;, &quot;0011100&quot;, &quot;0001000&quot;];
+    for (var r = 0; r &lt; m.length; r++) for (var c = 0; c &lt; 7; c++)
+      if (m[r].charAt(c) === &quot;1&quot;) blk(x + c * 1.85, y + r * 1.85, 1.85, 1.85, col);
+  }
+
+  function drawOLED(force) {
+    var st = screenState();
+    var blinkOn = Math.floor(Date.now() / 620) % 2 === 0;
+    var timeStr = fmt(S.remain);
+    var pct = (S.mode === &quot;focus&quot; || S.mode === &quot;paused&quot; || S.mode === &quot;done&quot;)
+      ? Math.min(1, Math.max(0, 1 - S.remain / S.duration)) : 0;
+    var key = st + &quot;|&quot; + S.page + &quot;|&quot; + timeStr + &quot;|&quot; + (blinkOn ? 1 : 0) + &quot;|&quot; + S.pomDone + &quot;|&quot; + S.gazeQ + &quot;|&quot; + S.bud;
+    if (!force &amp;&amp; key === lastKey) return;
+    lastKey = key;
+
+    var col = COL[st] || COL.ready;
+    ctx.clearRect(0, 0, CW, CH);
+    var g = ctx.createLinearGradient(0, 0, 0, CH);
+    g.addColorStop(0, &quot;#0A1318&quot;); g.addColorStop(1, &quot;#04070A&quot;);
+    ctx.fillStyle = g; ctx.fillRect(0, 0, CW, CH);
+
+    var dim = (st === &quot;away&quot; &amp;&amp; !blinkOn);
+    ctx.globalAlpha = dim ? 0.3 : 1;
+    var page = S.page;
+
+    if (page === 1) {
+      /* —— 第 2 页 · 一张大脸 —— */
+      var kind = st === &quot;done&quot; ? &quot;happy&quot; : (st === &quot;away&quot; ? &quot;shut&quot; : &quot;dot&quot;);
+      eyes(14.2, kind, col, 14.5, 3.7);
+      mouth(st === &quot;done&quot; ? 25 : (st === &quot;away&quot; ? 24.2 : 24.6), st === &quot;away&quot; ? &quot;flat&quot; : (st === &quot;done&quot; ? &quot;big&quot; : &quot;open&quot;), col, 18);
+      if (st === &quot;done&quot;) cheeks(25, &quot;#E4708F&quot;);
+      textS(&quot;HI&quot;, 25.9, 31.4, 1.2, col);
+    } else if (page === 2) {
+      /* —— 第 3 页 · 今日陪伴 —— */
+      heart(26, 4.6, col);
+      var n = Math.min(S.pomDone, 8);
+      for (var k = 0; k &lt; 8; k++)
+        blk(16.9 + k * 4.1, 19.4, 2.5, 2.5, k &lt; n ? col : &quot;#2E4048&quot;);
+      var num = String(Math.min(S.pomDone, 9));
+      textS(num, 28.3, 26, 1.7, col);
+    } else {
+      /* —— 第 1 页 · 时间 —— */
+      if (st === &quot;away&quot;) {
+        eyes(8.4, &quot;shut&quot;, col); mouth(15.2, &quot;flat&quot;, col, 9); cheeks(15.2, &quot;#8A5230&quot;);
+      } else if (st === &quot;done&quot;) {
+        eyes(8.4, &quot;happy&quot;, col); mouth(15, &quot;big&quot;, col, 15); cheeks(15, &quot;#E4708F&quot;);
+      } else if (st === &quot;paused&quot;) {
+        eyes(8.6, &quot;dot&quot;, col); mouth(15.2, &quot;flat&quot;, col, 9); cheeks(15.2, &quot;#C98199&quot;);
+      } else {
+        eyes(8.6, &quot;dot&quot;, col); mouth(15, &quot;open&quot;, col, 11); cheeks(15, &quot;#E4708F&quot;);
+      }
+
+      var s = 1.5, tw = (timeStr.length * 6 - 1) * s;
+      var tx = (65 - tw) / 2 + (st === &quot;focus&quot; || st === &quot;paused&quot; ? 1.6 : 0);
+      textS(timeStr, tx, 23.4, s, col);
+      if (st === &quot;focus&quot; || st === &quot;paused&quot;) {
+        var px = tx - 4.6, py = 24.8;
+        for (var i = 0; i &lt; 5; i++) {
+          var w = Math.max(0.8, 3.4 - Math.abs(i - 2) * 1.25);
+          blk(px, py + i * 1.15, w, 0.95, col);
+        }
+      }
+
+      var barY = 40.4, barH = 2.4, barW = 45, barX = (65 - barW) / 2;
+      ctx.fillStyle = &quot;rgba(143,239,255,.13)&quot;;
+      ctx.fillRect(barX * CELL, barY * CELL, barW * CELL, barH * CELL);
+      ctx.fillStyle = col;
+      ctx.fillRect(barX * CELL, barY * CELL, barW * CELL * pct, barH * CELL);
+    }
+
+    ctx.globalAlpha = 1;
+    pageDots(col);
+  }
+
+  function renderPips() {
+    var box = $(&quot;#pips&quot;);
+    if (!box) return;
+    if (box.children.length !== 8) {
+      box.innerHTML = &quot;&quot;;
+      for (var i = 0; i &lt; 8; i++) box.appendChild(document.createElement(&quot;i&quot;));
+    }
+    var n = Math.min(S.pomDone, 8);
+    for (var j = 0; j &lt; 8; j++) box.children[j].className = j &lt; n ? &quot;on&quot; : &quot;&quot;;
+    $(&quot;#todayNum&quot;).textContent = S.pomDone + &quot; / 8&quot;;
+  }
+
+  var STAGE_ST = [&quot;is-ready&quot;, &quot;is-focus&quot;, &quot;is-paused&quot;, &quot;is-away&quot;, &quot;is-done&quot;];
+  function setStage() {
+    var stage = $(&quot;#stage&quot;);
+    var st = screenState();
+    STAGE_ST.forEach(function (c) { stage.classList.remove(c); });
+    stage.classList.add(&quot;is-&quot; + st);
+    stage.classList.toggle(&quot;led-on&quot;, S.led === &quot;on&quot;);
+    stage.classList.toggle(&quot;led-off&quot;, S.led === &quot;off&quot;);
+    var glow = st === &quot;away&quot; ? &quot;#F2B457&quot; : (st === &quot;paused&quot; ? &quot;#C9A227&quot; : &quot;#58E0A8&quot;);
+    stage.style.setProperty(&quot;--glow&quot;, glow);
+  }
+
+  function render() {
+    var st = screenState();
+    $(&quot;#timeText&quot;).textContent = fmt(S.remain);
+    $(&quot;#pomCount&quot;).textContent = &quot;今日 &quot; + S.pomDone + &quot; 个&quot;;
+    $(&quot;#subText&quot;).textContent = {
+      ready: &quot;等待触摸&quot;,
+      focus: &quot;专注进行中 · 别碰手机&quot;,
+      paused: &quot;已暂停 · 触摸继续&quot;,
+      away: &quot;检测到离座 · 灯带呼吸提醒&quot;,
+      done: &quot;刚刚完成一个番茄&quot;
+    }[st] || &quot;&quot;;
+    $(&quot;#mainBtn&quot;).textContent = S.mode === &quot;focus&quot; ? &quot;暂停&quot; : (S.mode === &quot;paused&quot; ? &quot;继续&quot; : &quot;开始专注&quot;);
+    $(&quot;#mainBtn&quot;).disabled = S.mode === &quot;done&quot;;
+    $(&quot;#endBtn&quot;).disabled = !(S.mode === &quot;focus&quot; || S.mode === &quot;paused&quot;);
+
+    var hint = $(&quot;#hint&quot;);
+    hint.textContent = S.away ? &quot;触摸机身 · 回到座位&quot;
+      : (S.mode === &quot;focus&quot; ? &quot;触摸机身 · 暂停&quot;
+      : (S.mode === &quot;paused&quot; ? &quot;触摸机身 · 继续&quot;
+      : (S.mode === &quot;done&quot; ? &quot;完成&quot;
+      : &quot;触摸机身 · 开始专注&quot;)));
+    hint.className = &quot;hint&quot; + (S.away ? &quot; warn&quot; : (S.mode === &quot;focus&quot; || S.mode === &quot;ready&quot; ? &quot; live&quot; : &quot;&quot;));
+    renderPips();
+
+    setStage();
+    drawOLED();
+  }
+
+  /* ---------------- 计时 ---------------- */
+  function tick() {
+    if (S.mode !== &quot;focus&quot;) return;
+    var t = performance.now(), dt = t - S.last;
+    S.last = t; S.remain -= dt;
+    if (S.remain &lt;= 0) { S.remain = 0; complete(); return; }
+    render();
+  }
+  setInterval(tick, 150);
+
+  function start() {
+    ensureAudio();
+    if (S.mode === &quot;paused&quot;) {
+      S.mode = &quot;focus&quot;; S.last = performance.now(); S.lastAct = Date.now();
+      speak(&quot;继续，我们接着来。&quot;); log(&quot;触摸 · 继续专注&quot;, &quot;&quot;);
+    } else {
+      S.mode = &quot;focus&quot;; S.remain = S.duration; S.last = performance.now();
+      S.lastAct = Date.now(); S.away = false; S.leaveAt = null;
+      var m = Math.round(S.duration / 60000);
+      speak(&quot;开始吧，&quot; + m + &quot; 分钟。&quot;);
+      log(&quot;触摸启动 · &quot; + m + &quot; 分钟计时开始&quot;, &quot;&quot;);
+    }
+    render();
+  }
+  function seatReset() {
+    if (S.dist &gt;= AWAY_CM) setDist(42, false);
+  }
+  function pause() {
+    S.mode = &quot;paused&quot;; S.away = false; S.leaveAt = null;
+    seatReset();
+    speak(&quot;先歇一下。&quot;); log(&quot;触摸暂停&quot;, &quot;gray&quot;); render();
+  }
+  function endEarly() {
+    var used = S.duration - S.remain;
+    S.mode = &quot;ready&quot;; S.away = false; S.leaveAt = null; S.remain = S.duration;
+    seatReset();
+    log(used &gt; 20000 ? &quot;提前结束 · 已专注 &quot; + Math.round(used / 60000) + &quot; 分钟&quot; : &quot;结束&quot;, &quot;gray&quot;);
+    speak(&quot;好，那就先不开始。&quot;); render();
+  }
+  function complete() {
+    S.mode = &quot;done&quot;; S.pomDone++; S.away = false; S.leaveAt = null;
+    seatReset();
+    speak(Math.round(S.duration / 60000) + &quot; 分钟，完成。&quot;);
+    log(&quot;完成一个番茄 · 今日第 &quot; + S.pomDone + &quot; 个&quot;, &quot;&quot;);
+    tone(523.25, 0, 0.5, 0.05); tone(659.25, 0.12, 0.5, 0.05);
+    tone(783.99, 0.24, 0.6, 0.05); tone(1046.5, 0.36, 0.8, 0.04);
+    render();
+    setTimeout(function () {
+      if (S.mode !== &quot;done&quot;) return;
+      S.mode = &quot;ready&quot;; S.remain = S.duration; render();
+    }, 4200);
+  }
+
+  /* ---------------- 在座检测 ---------------- */
+  function setSeat(awayNow) {
+    if (awayNow === S.away) return;
+    if (awayNow) {
+      S.away = true;
+      if (S.mode === &quot;focus&quot;) {
+        speak(&quot;我还在等你回来。&quot;);
+        bubble(&quot;我还在等你回来。&quot;);
+        log(&quot;离座 &quot; + S.threshold + &quot; 秒 · 灯带呼吸 + 语音提醒&quot;, &quot;amber&quot;);
+      }
+    } else {
+      S.away = false;
+      if (S.mode === &quot;focus&quot;) {
+        speak(&quot;你回来了，继续。&quot;);
+        bubble(&quot;你回来了，继续。&quot;);
+        log(&quot;回到座位 · 恢复计时&quot;, &quot;&quot;);
+      }
+    }
+    render();
+  }
+  function setDist(v, byAuto) {
+    S.dist = v; S.autoAway = !!byAuto;
+    $(&quot;#distVal&quot;).textContent = v;
+    $(&quot;#dist&quot;).value = v;
+    if (v &gt;= AWAY_CM) { if (S.leaveAt === null) S.leaveAt = Date.now(); }
+    else S.leaveAt = null;
+    paintSeat();
+  }
+  function paintSeat() {
+    var seat = $(&quot;#seatState&quot;);
+    if (S.away) { seat.textContent = &quot;离开座位&quot;; seat.className = &quot;sensor-state away&quot;; }
+    else if (S.leaveAt !== null) {
+      var wait = Math.max(0, Math.ceil((S.threshold * 1000 - (Date.now() - S.leaveAt)) / 1000));
+      seat.textContent = &quot;离开中 · &quot; + wait + &quot;s&quot;; seat.className = &quot;sensor-state away&quot;;
+    } else { seat.textContent = &quot;在座&quot;; seat.className = &quot;sensor-state&quot;; }
+  }
+  function evalSeat() {
+    paintSeat();
+    if (!S.sensorOn) { if (S.away) setSeat(false); return; }
+    var should = S.leaveAt !== null &amp;&amp; (Date.now() - S.leaveAt) &gt;= S.threshold * 1000;
+    if (should !== S.away) setSeat(should);
+  }
+
+  $(&quot;#dist&quot;).addEventListener(&quot;input&quot;, function () {
+    setDist(parseInt(this.value, 10), false);
+    S.lastAct = Date.now();
+  });
+  [&quot;mousemove&quot;, &quot;mousedown&quot;, &quot;keydown&quot;, &quot;wheel&quot;, &quot;touchstart&quot;].forEach(function (ev) {
+    document.addEventListener(ev, function () {
+      S.lastAct = Date.now();
+      if (S.autoAway &amp;&amp; S.dist &gt;= AWAY_CM) setDist(42, false);
+    }, { passive: true });
+  });
+  setInterval(function () {
+    if (!S.sensorOn || !S.autoSense || S.mode !== &quot;focus&quot;) return;
+    if (S.dist &gt;= AWAY_CM) return;
+    if (Date.now() - S.lastAct &gt; S.threshold * 1000) setDist(120, true);
+  }, 700);
+  setInterval(evalSeat, 300);
+
+  /* ---------------- 控件 ---------------- */
+  function flashPad() {
+    var pad = $(&quot;#pad&quot;);
+    pad.classList.remove(&quot;flash&quot;);
+    void pad.offsetWidth;
+    pad.classList.add(&quot;flash&quot;);
+  }
+  function tapBody() {
+    ensureAudio();
+    flashPad();
+    if (S.mode === &quot;done&quot;) return;
+    if (S.away) { setDist(42, false); evalSeat(); return; }
+    if (S.mode === &quot;focus&quot;) pause(); else start();
+  }
+  $(&quot;#touch&quot;).addEventListener(&quot;click&quot;, tapBody);
+
+  /* ================================================================
+     人 × 图片：指针在设备上移动、悬停、按下的物理反馈
+     ================================================================ */
+  var stage = $(&quot;#stage&quot;), rig = $(&quot;#rig&quot;), budGlow = $(&quot;#budGlow&quot;);
+  var idleTimer = null;
+
+  function setGaze(px, py) {
+    var gx = Math.max(-1.7, Math.min(1.7, (px - 0.5) * 3.4));
+    var gy = Math.max(-0.9, Math.min(0.9, (py - 0.5) * 1.9));
+    S.gaze = gx; S.gazeY = gy;
+    var q = Math.round(gx * 4) * 10 + Math.round(gy * 4);
+    if (q !== S.gazeQ) { S.gazeQ = q; drawOLED(); }
+  }
+
+  stage.addEventListener(&quot;mousemove&quot;, function (e) {
+    var r = stage.getBoundingClientRect();
+    if (!r.width) return;
+    var px = (e.clientX - r.left) / r.width;
+    var py = (e.clientY - r.top) / r.height;
+    stage.style.setProperty(&quot;--mx&quot;, (px * 100).toFixed(1) + &quot;%&quot;);
+    stage.style.setProperty(&quot;--my&quot;, (py * 100).toFixed(1) + &quot;%&quot;);
+    stage.classList.remove(&quot;idle&quot;);
+    stage.classList.add(&quot;live&quot;);
+    rig.style.setProperty(&quot;--ry&quot;, ((px - 0.5) * 5.0).toFixed(2) + &quot;deg&quot;);
+    rig.style.setProperty(&quot;--rx&quot;, ((0.5 - py) * 3.6).toFixed(2) + &quot;deg&quot;);
+    setGaze(px, py);
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(function () {
+      stage.classList.remove(&quot;live&quot;);
+      stage.classList.add(&quot;idle&quot;);
+      rig.style.setProperty(&quot;--ry&quot;, &quot;0deg&quot;);
+      rig.style.setProperty(&quot;--rx&quot;, &quot;0deg&quot;);
+    }, 5200);
+  }, { passive: true });
+
+  stage.addEventListener(&quot;mouseleave&quot;, function () {
+    stage.classList.remove(&quot;live&quot;);
+    stage.classList.add(&quot;idle&quot;);
+    rig.style.setProperty(&quot;--ry&quot;, &quot;0deg&quot;);
+    rig.style.setProperty(&quot;--rx&quot;, &quot;0deg&quot;);
+    rig.style.setProperty(&quot;--dy&quot;, &quot;0px&quot;);
+    clearTimeout(idleTimer);
+    setGaze(0.5, 0.5);
+  });
+
+  /* 按下时机身轻微下沉 */
+  stage.addEventListener(&quot;pointerdown&quot;, function () { rig.style.setProperty(&quot;--dy&quot;, &quot;2px&quot;); });
+  [&quot;pointerup&quot;, &quot;pointercancel&quot;, &quot;mouseleave&quot;].forEach(function (ev) {
+    stage.addEventListener(ev, function () { rig.style.setProperty(&quot;--dy&quot;, &quot;0px&quot;); });
+  });
+
+  /* —— 屏幕：点一下换一页 —— */
+  function cyclePage() {
+    S.page = (S.page + 1) % 3;
+    var name = [&quot;时间&quot;, &quot;表情&quot;, &quot;今日&quot;][S.page];
+    drawOLED(true);
+    toast(&quot;OLED 第 &quot; + (S.page + 1) + &quot; 页 · &quot; + name);
+    log(&quot;轻触屏幕 · 切到「&quot; + name + &quot;」页&quot;, &quot;gray&quot;);
+  }
+  $(&quot;#hotScreen&quot;).addEventListener(&quot;click&quot;, function (e) {
+    e.stopPropagation(); ensureAudio(); cyclePage();
+  });
+
+  /* —— 触摸区：同一套开始 / 暂停 —— */
+  $(&quot;#hotTouch&quot;).addEventListener(&quot;click&quot;, function (e) {
+    e.stopPropagation(); tapBody();
+  });
+
+  /* —— 灯带：跟随状态 / 常亮 / 熄灭 —— */
+  var LED_NAME = { auto: &quot;跟随状态&quot;, on: &quot;常亮&quot;, off: &quot;熄灭&quot; };
+  function cycleLed() {
+    var order = [&quot;auto&quot;, &quot;on&quot;, &quot;off&quot;];
+    S.led = order[(order.indexOf(S.led) + 1) % 3];
+    setStage();
+    toast(&quot;灯带 · &quot; + LED_NAME[S.led]);
+    log(&quot;灯带 → &quot; + LED_NAME[S.led], &quot;gray&quot;);
+  }
+  $(&quot;#hotLed&quot;).addEventListener(&quot;click&quot;, function (e) {
+    e.stopPropagation(); ensureAudio(); cycleLed();
+  });
+
+  /* —— 喇叭：说一句 —— */
+  $(&quot;#hotSpk&quot;).addEventListener(&quot;click&quot;, function (e) {
+    e.stopPropagation();
+    ensureAudio();
+    speak(&quot;我还在等你回来。&quot;, true);
+    bubble(&quot;我还在等你回来。&quot;);
+    log(&quot;点了一下喇叭 · 出声&quot;, &quot;gray&quot;);
+  });
+
+  /* —— 顶部小芽：只发光，不摆动 —— */
+  $(&quot;#hotBud&quot;).addEventListener(&quot;click&quot;, function (e) {
+    e.stopPropagation();
+    ensureAudio();
+    budGlow.classList.add(&quot;on&quot;);
+    tone(659.25, 0, 0.16, 0.03); tone(987.77, 0.09, 0.22, 0.025);
+    clearTimeout(budGlow._t);
+    budGlow._t = setTimeout(function () { budGlow.classList.remove(&quot;on&quot;); }, 1500);
+    toast(&quot;小芽只发光 · 没有机械摆动&quot;);
+    log(&quot;点亮小芽 · 纯光效&quot;, &quot;gray&quot;);
+  });
+  $(&quot;#mainBtn&quot;).addEventListener(&quot;click&quot;, function () {
+    if (S.mode === &quot;done&quot;) return;
+    if (S.mode === &quot;focus&quot;) pause(); else start();
+  });
+  $(&quot;#endBtn&quot;).addEventListener(&quot;click&quot;, endEarly);
+
+  document.querySelectorAll(&quot;#seg button&quot;).forEach(function (b) {
+    b.addEventListener(&quot;click&quot;, function () {
+      document.querySelectorAll(&quot;#seg button&quot;).forEach(function (x) { x.classList.remove(&quot;on&quot;); });
+      b.classList.add(&quot;on&quot;);
+      var m = parseInt(b.getAttribute(&quot;data-min&quot;), 10);
+      S.duration = m * 60000; S.remain = m * 60000;
+      if (S.mode === &quot;focus&quot; || S.mode === &quot;paused&quot;) { S.mode = &quot;ready&quot;; S.away = false; }
+      log(&quot;切换时长 · &quot; + m + &quot; 分钟&quot;, &quot;gray&quot;);
+      render();
+    });
+  });
+
+  $(&quot;#sensorToggle&quot;).addEventListener(&quot;click&quot;, function () {
+    S.sensorOn = !S.sensorOn;
+    this.classList.toggle(&quot;on&quot;, S.sensorOn);
+    if (!S.sensorOn &amp;&amp; S.away) setSeat(false);
+    log(S.sensorOn ? &quot;在座检测 · 开启&quot; : &quot;在座检测 · 关闭&quot;, &quot;gray&quot;);
+  });
+  $(&quot;#autoToggle&quot;).addEventListener(&quot;click&quot;, function () {
+    S.autoSense = !S.autoSense;
+    this.classList.toggle(&quot;on&quot;, S.autoSense);
+    log(S.autoSense ? &quot;自动感应 · 开启&quot; : &quot;自动感应 · 关闭&quot;, &quot;gray&quot;);
+  });
+  $(&quot;#soundToggle&quot;).addEventListener(&quot;click&quot;, function () {
+    S.sound = !S.sound;
+    this.classList.toggle(&quot;on&quot;, S.sound);
+    log(S.sound ? &quot;语音 · 开启&quot; : &quot;语音 · 关闭&quot;, &quot;gray&quot;);
+  });
+
+  $(&quot;#thRange&quot;).addEventListener(&quot;input&quot;, function () {
+    S.threshold = parseInt(this.value, 10);
+    $(&quot;#thLabel&quot;).textContent = S.threshold + &quot; 秒&quot;;
+    if (S.leaveAt !== null &amp;&amp; Date.now() - S.leaveAt &gt;= S.threshold * 1000) evalSeat();
+    paintSeat();
+  });
+
+  $(&quot;#awayBtn&quot;).addEventListener(&quot;click&quot;, function () {
+    if (S.mode !== &quot;focus&quot;) { toast(&quot;先开始一个专注，再试离座&quot;); return; }
+    if (!S.sensorOn) { toast(&quot;在座检测已关闭&quot;); return; }
+    setDist(120, false);
+    S.leaveAt = Date.now() - S.threshold * 1000;
+    evalSeat();
+  });
+
+  $(&quot;#voiceBtn&quot;).addEventListener(&quot;click&quot;, function () {
+    ensureAudio();
+    speak(&quot;我还在等你回来。&quot;, true);
+    bubble(&quot;我还在等你回来。&quot;);
+    log(&quot;试听语音&quot;, &quot;gray&quot;);
+  });
+
+  /* ---------------- 初始化 ---------------- */
+  log(&quot;设备上电 · 自检通过&quot;, &quot;gray&quot;);
+  log(&quot;在座检测 · HC-SR04 就绪&quot;, &quot;gray&quot;);
+  log(&quot;设备就绪 · 等待触摸&quot;, &quot;gray&quot;);
+  render();
+  drawOLED(true);
+  setInterval(function () { drawOLED(); }, 260);
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+            </div>
+            <p class="px-2 pt-3 pb-1 text-[11.5px] text-white/62">网页交互演示 · 点机身开始或暂停；屏幕、灯带、喇叭和小芽也能点。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-[1200px] mx-auto px-8"><div class="hair"></div></div>
+
+<!-- 三大创作方向 -->
+<section class="relative border-b border-white/[0.055]">
+  <div class="max-w-[1200px] mx-auto px-8 py-8 grid grid-cols-12 gap-6 items-center">
+    <div class="col-span-12 md:col-span-3">
+      <div class="mono text-[10px] tracking-[0.2em] text-white/28">THREE DIRECTIONS</div>
+      <div class="mt-1.5 text-[13px] text-white/62">同时覆盖三大创作方向</div>
+    </div>
+    <div class="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="flex items-start gap-3">
+        <span class="mono text-[10px] mt-[3px] text-[#35E5B2]">01</span>
+        <div>
+          <div class="text-[13.5px] font-medium">学会得</div>
+          <div class="mt-1 text-[11.5px] text-white/45 leading-relaxed">摸一下就开始，让学习更容易发生</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="mono text-[10px] mt-[3px] text-[#35E5B2]">02</span>
+        <div>
+          <div class="text-[13.5px] font-medium">少折腾</div>
+          <div class="mt-1 text-[11.5px] text-white/45 leading-relaxed">一颗按键，无配对、无 App、无账号</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="mono text-[10px] mt-[3px] text-[#35E5B2]">03</span>
+        <div>
+          <div class="text-[13.5px] font-medium">有回应</div>
+          <div class="mt-1 text-[11.5px] text-white/45 leading-relaxed">灯会亮、它会说话，物件有了新交互</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 01 痛点 ===== -->
+<section id="need" class="relative py-24">
+  <div class="max-w-[1200px] mx-auto px-8">
+    <div class="rv">
+      <div class="flex items-end justify-between gap-8 flex-wrap">
+        <div>
+          <div class="num">01 ／ 说清需求</div>
+          <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">自习室里真正发生过的小问题</h2>
+          <p class="mt-4 text-[14.5px] text-white/56 leading-[1.8] max-w-[620px]">
+            不是"学习效率不够高"这种大词，而是每晚都在重复的四件小事 —— 它们足够小，小到没人做产品。
+          </p>
+        </div>
+        <div class="mono text-[11px] tracking-[0.2em] text-white/22 hidden md:block">FOUR SMALL PROBLEMS</div>
+      </div>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+      <div class="card rounded-2xl p-6 rv">
+        <div class="flex items-start justify-between">
+          <div class="w-11 h-11 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9"/><path d="m8 8 4 4 4-4"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">01</span>
+        </div>
+        <h3 class="mt-5 text-[17px] font-semibold">启动困难</h3>
+        <p class="mt-2.5 text-[13px] leading-[1.75] text-white/56">想学，但很难进入专注状态。打开书的那一刻成本最高，于是刷了 40 分钟手机。</p>
+        <p class="mt-4 pt-4 border-t border-white/[0.06] text-[12.5px] leading-[1.7] text-[#8BFFD9]/78">把"要不要开始"压缩成一个动作。</p>
+      </div>
+
+      <div class="card rounded-2xl p-6 rv">
+        <div class="flex items-start justify-between">
+          <div class="w-11 h-11 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">02</span>
+        </div>
+        <h3 class="mt-5 text-[17px] font-semibold">容易分心</h3>
+        <p class="mt-2.5 text-[13px] leading-[1.75] text-white/56">噪音、频繁离座、手机弹窗；一次打断之后，要很久才能把那口气接回来。</p>
+        <p class="mt-4 pt-4 border-t border-white/[0.06] text-[12.5px] leading-[1.7] text-[#8BFFD9]/78">它替你看住环境，也替你守住座位。</p>
+      </div>
+
+      <div class="card rounded-2xl p-6 rv">
+        <div class="flex items-start justify-between">
+          <div class="w-11 h-11 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19 10.6C19 15.6 12 20 12 20Z"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">03</span>
+        </div>
+        <h3 class="mt-5 text-[17px] font-semibold">缺少正向反馈</h3>
+        <p class="mt-2.5 text-[13px] leading-[1.75] text-white/56">长时间学习没有即时鼓励，成就感累积得很慢，于是"今天算了"变得越来越容易。</p>
+        <p class="mt-4 pt-4 border-t border-white/[0.06] text-[12.5px] leading-[1.7] text-[#8BFFD9]/78">每一颗番茄，都有一声祝贺和一束光。</p>
+      </div>
+
+      <div class="card rounded-2xl p-6 rv">
+        <div class="flex items-start justify-between">
+          <div class="w-11 h-11 rounded-xl bg-[#FFC46B]/10 border border-[#FFC46B]/20 grid place-items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD79B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.1 9a3 3 0 1 1 4 2.8c-.7.3-1.1 1-1.1 1.8v.6"/><circle cx="12" cy="18" r="1.1" fill="#FFD79B" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">04</span>
+        </div>
+        <h3 class="mt-5 text-[17px] font-semibold">细碎疑问无处问</h3>
+        <p class="mt-2.5 text-[13px] leading-[1.75] text-white/56">一个概念想确认，拿起手机搜一下 —— 结果被推送带走，回来时已经不想学了。</p>
+        <p class="mt-4 pt-4 border-t border-white/[0.06] text-[12.5px] leading-[1.7] text-[#FFD79B]/82">按住机身直接问，不用解锁任何屏幕。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 原型能力 ===== -->
+<section id="proto" class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-[#35E5B2]/[0.035] to-transparent pointer-events-none"></div>
+  <div class="relative max-w-[1200px] mx-auto px-8">
+    <div class="rv">
+      <div class="num">02 ／ 展示原型</div>
+      <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">六件事，它已经能做</h2>
+      <p class="mt-4 text-[14.5px] text-white/56 leading-[1.8] max-w-[640px]">
+        触摸、超声、麦克风、温湿度、灯带、屏幕全部已在原型上跑通；表情与情绪反馈只走
+        <span class="text-white/78">OLED 动画 ／ RGB 灯带 ／ 语音</span> 三条通道。
+      </p>
+    </div>
+
+    <div class="mt-11 grid grid-cols-12 gap-5">
+
+      <!-- 核心亮点 -->
+      <div class="col-span-12 lg:col-span-7 card rounded-3xl p-8 relative overflow-hidden rv">
+        <div class="absolute -right-16 -top-16 w-[280px] h-[280px] rounded-full bg-[#35E5B2]/16 blur-[80px]"></div>
+        <div class="relative">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center gap-2 h-7 px-3 rounded-full bg-[#35E5B2] text-[#03130F] mono text-[10.5px] font-bold tracking-[0.12em]">核心亮点</span>
+            <span class="mono text-[10.5px] tracking-[0.18em] text-white/30">BOARD-ONLY AI</span>
+          </div>
+          <h3 class="mt-5 text-[26px] font-semibold leading-snug tracking-tight">板端独立人机语音对话<span class="text-[#8BFFD9]/60 text-[15px] font-normal ml-2">不依赖电脑 · 已实现</span></h3>
+          <p class="mt-3 text-[13.5px] leading-[1.8] text-white/58 max-w-[440px]">
+            ESP32-S3 自带 WiFi，密钥写在板子里，开机即直连云端大模型。按住机身说话、松开就答 —— 查概念、对答案、闲聊两句，都不用把视线从书上移开。
+          </p>
+
+          <div class="mt-7 space-y-2.5 max-w-[420px]">
+            <div class="flex justify-end">
+              <div class="rounded-2xl rounded-br-md bg-[#35E5B2]/14 border border-[#35E5B2]/22 px-4 py-2.5 text-[12.5px] text-[#C8FFEE]">泰勒展开的第三项是什么？</div>
+            </div>
+            <div class="flex justify-start">
+              <div class="rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/[0.08] px-4 py-2.5 text-[12.5px] text-white/72">x³/3! 。需要我把前五项都列出来吗？</div>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="mono text-[10px] tracking-wider px-2.5 py-1 rounded-md border border-white/10 text-white/45">按住说话</span>
+            <span class="mono text-[10px] tracking-wider px-2.5 py-1 rounded-md border border-white/10 text-white/45">INMP441 拾音</span>
+            <span class="mono text-[10px] tracking-wider px-2.5 py-1 rounded-md border border-white/10 text-white/45">MAX98357 出声</span>
+            <span class="mono text-[10px] tracking-wider px-2.5 py-1 rounded-md border border-white/10 text-white/45">无需配对</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右列两张 -->
+      <div class="col-span-12 lg:col-span-5 grid grid-rows-2 gap-5">
+        <div class="card rounded-3xl p-7 rv">
+          <div class="flex items-center justify-between">
+            <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.4V12l3 1.9"/></svg>
+            </div>
+            <span class="mono text-[10px] text-white/22 tracking-widest">01</span>
+          </div>
+          <h3 class="mt-4 text-[17px] font-semibold">一键专注计时</h3>
+          <p class="mt-2 text-[12.8px] leading-[1.75] text-white/56">触摸 TTP223 即刻开始 25 分钟番茄钟，OLED 同步显示倒计时与进度，再摸一次暂停。</p>
+        </div>
+        <div class="card rounded-3xl p-7 rv">
+          <div class="flex items-center justify-between">
+            <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15.5a6 6 0 1 1 12 0"/><path d="M12 15.5 15 11"/><circle cx="12" cy="15.5" r="1.1" fill="#8BFFD9" stroke="none"/></svg>
+            </div>
+            <span class="mono text-[10px] text-white/22 tracking-widest">02</span>
+          </div>
+          <h3 class="mt-4 text-[17px] font-semibold">智能陪伴提醒</h3>
+          <p class="mt-2 text-[12.8px] leading-[1.75] text-white/56">离座超时、久坐、环境噪音过大、温湿度不适 —— 四种情境，四种温和的提醒方式。</p>
+        </div>
+      </div>
+
+      <div class="col-span-12 md:col-span-4 card rounded-3xl p-7 rv">
+        <div class="flex items-center justify-between">
+          <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M9 19V5M14 19v-7M19 19v-4"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">03</span>
+        </div>
+        <h3 class="mt-4 text-[17px] font-semibold">进度可视化</h3>
+        <p class="mt-2 text-[12.8px] leading-[1.75] text-white/56">OLED 显示今日番茄数、任务完成情况，一眼看到"今天没有白过"。</p>
+      </div>
+
+      <div class="col-span-12 md:col-span-4 card rounded-3xl p-7 rv">
+        <div class="flex items-center justify-between">
+          <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.6"/><circle cx="16.5" cy="16" r="2.6"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">04</span>
+        </div>
+        <h3 class="mt-4 text-[17px] font-semibold">灯光 + 语音鼓励</h3>
+        <p class="mt-2 text-[12.8px] leading-[1.75] text-white/56">专注完成时灯带跑一段特效、喇叭道一句祝贺，把"结束了"变成一个小仪式。</p>
+      </div>
+
+      <div class="col-span-12 md:col-span-4 card rounded-3xl p-7 rv">
+        <div class="flex items-center justify-between">
+          <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/10 border border-[#35E5B2]/20 grid place-items-center">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.5a3 3 0 0 1 0 5.6M18.5 19a5 5 0 0 0-3-4.6"/></svg>
+          </div>
+          <span class="mono text-[10px] text-white/22 tracking-widest">05</span>
+        </div>
+        <h3 class="mt-4 text-[17px] font-semibold">网页共学打卡</h3>
+        <p class="mt-2 text-[12.8px] leading-[1.75] text-white/56">宿舍、班级、研友之间线上打卡，把一个人的坚持变成一群人的进度条。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 硬件映射 ===== -->
+<section id="hw" class="relative py-24">
+  <div class="max-w-[1200px] mx-auto px-8">
+    <div class="grid grid-cols-12 gap-12 items-start">
+      <div class="col-span-12 lg:col-span-4 rv">
+        <div class="num">03 ／ 硬件映射</div>
+        <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">九件成熟器件<br>一件都不难买</h2>
+        <p class="mt-4 text-[14px] leading-[1.85] text-white/56">
+          全部是教学与创客场景里最常见的模块，焊接与调试成本可控，具备批量复刻的条件。
+        </p>
+
+        <div class="mt-8 rounded-2xl card-flat p-5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#35E5B2]"></span>
+            <span class="mono text-[10.5px] tracking-[0.16em] text-[#8BFFD9]">主控即联网</span>
+          </div>
+          <p class="mt-2.5 text-[12.5px] leading-[1.8] text-white/50">
+            ESP32-S3 同时承担三件事：WiFi 联网、传感器调度、板端直连云端大模型 —— 因此整机不需要电脑做中转。
+          </p>
+        </div>
+
+        <div class="mt-4 rounded-2xl card-flat p-5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#FFC46B]"></span>
+            <span class="mono text-[10.5px] tracking-[0.16em] text-[#FFD79B]">三通道表达</span>
+          </div>
+          <p class="mt-2.5 text-[12.5px] leading-[1.8] text-white/50">
+            OLED 动画负责状态，RGB 灯带负责氛围，语音喇叭负责说话。全部反馈在这三条通道内完成，结构简单、成本更低。
+          </p>
+        </div>
+
+        <div class="mt-4 rounded-2xl card-flat p-5">
+          <div class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/45"></span>
+            <span class="mono text-[10.5px] tracking-[0.16em] text-white/55">少折腾</span>
+          </div>
+          <p class="mt-2.5 text-[12.5px] leading-[1.8] text-white/50">
+            全机只有一颗触摸按键：不配对、不装 App、不注册账号，通电就进入可用状态 —— 把重复动作减到零。
+          </p>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-8">
+        <div class="rounded-3xl border border-white/[0.075] overflow-hidden bg-white/[0.018] rv">
+          <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 h-11 items-center border-b border-white/[0.07] bg-white/[0.02]">
+            <div class="mono text-[10px] tracking-[0.18em] text-white/32">元器件</div>
+            <div class="mono text-[10px] tracking-[0.18em] text-white/32">在系统里的角色</div>
+          </div>
+
+          <div class="divide-y divide-white/[0.05]">
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row bg-[#35E5B2]/[0.055] border-l-2 border-[#35E5B2]">
+              <div class="flex items-center gap-2.5">
+                <span class="text-[13.5px] font-semibold text-[#B9FFE7]">ESP32-S3</span>
+                <span class="mono text-[9px] px-1.5 py-[2px] rounded bg-[#35E5B2] text-[#03130F] font-bold">核心</span>
+              </div>
+              <div class="text-[12.5px] text-white/62 leading-relaxed">WiFi 联网 · 调度全部传感器 · <span class="text-[#8BFFD9]">板端直连云端大模型</span></div>
+            </div>
+
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">0.96″ OLED</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">倒计时、进度条、今日完成数、对话状态</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">HC-SR04 超声波</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">在座 / 离座检测，判断人是否还在桌前</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">INMP441 麦克风</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">环境噪声感知 + 语音拾音，支撑对话输入</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">SHT30 温湿度</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">环境舒适度，提示是否适合长时间坐着</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">TTP223 触摸</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">一键开始 / 暂停，按住说话</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">WS2812 RGB 灯带</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">氛围与反馈：专注呼吸、提醒变色、完成特效</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">MAX98357 + 3W 喇叭</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">语音播报、提醒、对话输出</div>
+            </div>
+            <div class="grid grid-cols-[1.05fr_1.9fr] gap-4 px-6 py-4 items-center bar-row">
+              <div class="text-[13.5px] text-white/78">锂电池组</div>
+              <div class="text-[12.5px] text-white/58 leading-relaxed">桌面独立供电，不占插座、可随手挪位</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 MVP ===== -->
+<section id="mvp" class="relative py-24">
+  <div class="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-transparent via-[#35E5B2]/[0.03] to-transparent pointer-events-none"></div>
+  <div class="relative max-w-[1200px] mx-auto px-8">
+    <div class="rv flex items-end justify-between gap-8 flex-wrap">
+      <div>
+        <div class="num">04 ／ MVP 最小可行版本</div>
+        <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">现场可以这样演一遍</h2>
+        <p class="mt-4 text-[14.5px] text-white/56 leading-[1.8] max-w-[600px]">
+          36 小时内可完成，走完一条完整链路：从一个念头，到一次落地的完成感。
+        </p>
+      </div>
+      <div class="inline-flex items-center gap-2 h-9 px-4 rounded-full tag mono text-[11px] tracking-[0.12em] text-[#8BFFD9]">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3.2 2"/></svg>
+        1.5 天可跑通
+      </div>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+      <div class="relative rv">
+        <div class="card rounded-2xl p-6 h-full">
+          <div class="flex items-center justify-between">
+            <span class="mono text-[29px] leading-none text-[#35E5B2]/26 font-bold">01</span>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5h9a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/><path d="M7 9H5.5A1.5 1.5 0 0 0 4 10.5v9A1.5 1.5 0 0 0 5.5 21H14"/></svg>
+          </div>
+          <h3 class="mt-4 text-[16.5px] font-semibold">设定任务</h3>
+          <p class="mt-2 text-[12.5px] leading-[1.75] text-white/56">选一段专注时长（默认 25 分钟），今天要做什么，先写下来。</p>
+        </div>
+        <div class="hidden xl:block absolute -right-[26px] top-1/2 w-[26px] step-line h-px"></div>
+      </div>
+
+      <div class="relative rv">
+        <div class="card rounded-2xl p-6 h-full">
+          <div class="flex items-center justify-between">
+            <span class="mono text-[29px] leading-none text-[#35E5B2]/26 font-bold">02</span>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round"><path d="M9 11V6.5a1.5 1.5 0 0 1 3 0V11"/><path d="M12 10.5V5.5a1.5 1.5 0 0 1 3 0V11"/><path d="M15 11V8a1.5 1.5 0 0 1 3 0v7a6 6 0 0 1-6 6h-1a6 6 0 0 1-5.2-3L3.5 13a1.6 1.6 0 0 1 2.7-1.7L9 14"/></svg>
+          </div>
+          <h3 class="mt-4 text-[16.5px] font-semibold">触摸启动</h3>
+          <p class="mt-2 text-[12.5px] leading-[1.75] text-white/56">摸一下机身，OLED 开始倒计时，灯带进入呼吸节奏。</p>
+        </div>
+        <div class="hidden xl:block absolute -right-[26px] top-1/2 w-[26px] step-line h-px"></div>
+      </div>
+
+      <div class="relative rv">
+        <div class="card rounded-2xl p-6 h-full">
+          <div class="flex items-center justify-between">
+            <span class="mono text-[29px] leading-none text-[#35E5B2]/26 font-bold">03</span>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6Z"/><path d="M10.5 19a2 2 0 0 0 3 0"/></svg>
+          </div>
+          <h3 class="mt-4 text-[16.5px] font-semibold">过程提醒</h3>
+          <p class="mt-2 text-[12.5px] leading-[1.75] text-white/56">离座太久、噪声变大、坐得太久 —— 它会挑一个不打扰的方式提醒你。</p>
+        </div>
+        <div class="hidden xl:block absolute -right-[26px] top-1/2 w-[26px] step-line h-px"></div>
+      </div>
+
+      <div class="card rounded-2xl p-6 h-full rv">
+        <div class="flex items-center justify-between">
+          <span class="mono text-[29px] leading-none text-[#35E5B2]/26 font-bold">04</span>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FFD79B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 14.4 9l5.9.5-4.5 3.9 1.4 5.8L12 16.2 6.8 19.2 8.2 13.4 3.7 9.5 9.6 9 12 3.5Z"/></svg>
+        </div>
+        <h3 class="mt-4 text-[16.5px] font-semibold">完成奖励</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/56">灯带走一圈特效、喇叭说一句祝贺，今日番茄数 +1。</p>
+      </div>
+    </div>
+
+    <div class="mt-5 rounded-2xl border border-[#35E5B2]/22 bg-[#35E5B2]/[0.06] p-6 flex items-center gap-5 flex-wrap rv">
+      <div class="w-10 h-10 rounded-xl bg-[#35E5B2]/15 border border-[#35E5B2]/25 grid place-items-center shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BFFD9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10"/><rect x="9" y="2.5" width="6" height="6" rx="3"/><path d="M5 11v2a7 7 0 0 0 14 0v-2"/></svg>
+      </div>
+      <div class="flex-1 min-w-[280px]">
+        <div class="text-[14px] font-semibold text-[#C8FFEE]">任何一步，卡住都可以直接问</div>
+        <p class="mt-1.5 text-[12.5px] leading-[1.75] text-white/58">按住机身说话，ESP32-S3 直连云端大模型作答 —— 不掏手机、不切窗口，专注不被打断。</p>
+      </div>
+      <div class="mono text-[10.5px] tracking-[0.14em] text-[#8BFFD9]/70 hidden md:block">DEMO READY</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 价值验证 ===== -->
+<section id="value" class="relative py-24">
+  <div class="max-w-[1200px] mx-auto px-8">
+    <div class="rv">
+      <div class="num">05 ／ 验证想法 &amp; 价值说明</div>
+      <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">为什么是它，而不是手机里的助手</h2>
+    </div>
+
+    <div class="mt-12 grid grid-cols-12 gap-5">
+      <div class="col-span-12 lg:col-span-5 grid gap-5">
+        <div class="card rounded-2xl p-6 rv">
+          <div class="mono text-[10px] tracking-[0.18em] text-white/30">目标用户</div>
+          <p class="mt-3 text-[14px] leading-[1.8] text-white/66">
+            备考学生（考研 / 四六级）、自习党，以及每天要在桌前坐 3 小时以上、却总被手机带走注意力的人。
+          </p>
+        </div>
+        <div class="card rounded-2xl p-6 rv">
+          <div class="mono text-[10px] tracking-[0.18em] text-white/30">为什么值得持续用</div>
+          <p class="mt-3 text-[14px] leading-[1.8] text-white/66">
+            它把"坚持"变成可被感知的物理事件：一次触摸开始、一段灯光、一句祝贺、一条打卡记录。三周之后，桌上那台小物本身就成了一种提醒。
+          </p>
+        </div>
+        <div class="card rounded-2xl p-6 rv">
+          <div class="mono text-[10px] tracking-[0.18em] text-white/30">成本与付费潜力</div>
+          <p class="mt-3 text-[14px] leading-[1.8] text-white/66">
+            九件通用元器件，物料成本在校生可接受区间，可小批量复刻；卖点不是课程与内容订阅，而是<span class="text-white/88">桌面上的情绪陪伴硬件</span>本身。
+          </p>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-7 rv">
+        <div class="rounded-3xl border border-white/[0.075] bg-white/[0.018] overflow-hidden">
+          <div class="px-6 h-12 flex items-center justify-between border-b border-white/[0.07] bg-white/[0.02]">
+            <span class="text-[13px] font-medium text-white/70">与现有方案的关键差异</span>
+            <span class="mono text-[10px] tracking-[0.16em] text-white/26">COMPARISON</span>
+          </div>
+          <div class="grid grid-cols-[1.35fr_repeat(4,1fr)] text-[11px] mono tracking-wider text-white/30 px-6 py-3 border-b border-white/[0.05]">
+            <div>方案</div>
+            <div class="text-center">需拿起设备</div>
+            <div class="text-center">感知在座</div>
+            <div class="text-center">即时鼓励</div>
+            <div class="text-center">语音答疑</div>
+          </div>
+
+          <div class="grid grid-cols-[1.35fr_repeat(4,1fr)] px-6 py-4 items-center border-b border-white/[0.045]">
+            <div class="text-[13px] text-white/62">手机 AI 助手</div>
+            <div class="text-center text-[#FF8A8A]">✕</div>
+            <div class="text-center text-white/22">—</div>
+            <div class="text-center text-white/22">—</div>
+            <div class="text-center text-[#8BFFD9]">✓</div>
+          </div>
+          <div class="grid grid-cols-[1.35fr_repeat(4,1fr)] px-6 py-4 items-center border-b border-white/[0.045]">
+            <div class="text-[13px] text-white/62">智能音箱</div>
+            <div class="text-center text-[#8BFFD9]">✓</div>
+            <div class="text-center text-white/22">—</div>
+            <div class="text-center text-white/22">—</div>
+            <div class="text-center text-[#8BFFD9]">✓</div>
+          </div>
+          <div class="grid grid-cols-[1.35fr_repeat(4,1fr)] px-6 py-4 items-center border-b border-white/[0.045]">
+            <div class="text-[13px] text-white/62">番茄钟 App</div>
+            <div class="text-center text-[#FF8A8A]">✕</div>
+            <div class="text-center text-white/22">—</div>
+            <div class="text-center text-[#8BFFD9]">✓</div>
+            <div class="text-center text-[#FF8A8A]">✕</div>
+          </div>
+          <div class="grid grid-cols-[1.35fr_repeat(4,1fr)] px-6 py-5 items-center bg-[#35E5B2]/[0.07] border-l-2 border-[#35E5B2]">
+            <div class="text-[13.5px] font-semibold text-[#B9FFE7]">学伴桌搭</div>
+            <div class="text-center text-[#35E5B2] font-bold">✓</div>
+            <div class="text-center text-[#35E5B2] font-bold">✓</div>
+            <div class="text-center text-[#35E5B2] font-bold">✓</div>
+            <div class="text-center text-[#35E5B2] font-bold">✓</div>
+          </div>
+
+          <div class="px-6 py-4 border-t border-white/[0.07] bg-white/[0.015]">
+            <p class="text-[12px] leading-[1.8] text-white/50">
+              语音助手大多依赖手机或电脑做中转；学伴桌搭把"联网"和"模型调用"放进板子本身 ——
+              这才是"想答疑，又不想碰电子设备"这个矛盾的解法。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 扩展 ===== -->
+<section id="next" class="relative py-24">
+  <div class="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-[#35E5B2]/[0.03] to-transparent pointer-events-none"></div>
+  <div class="relative max-w-[1200px] mx-auto px-8">
+    <div class="rv flex items-end justify-between gap-8 flex-wrap">
+      <div>
+        <div class="num">06 ／ 扩展方向</div>
+        <h2 class="mt-4 text-[38px] leading-[1.2] font-semibold tracking-tight">从一个人的桌面，到一间自习室</h2>
+      </div>
+      <p class="text-[13px] text-white/34 max-w-[300px] leading-[1.8]">这一版只做"能不能开始"，下一版做"能不能一直在一起"。</p>
+    </div>
+
+    <div class="mt-11 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">宿舍共学模式</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">同宿舍设备组网共学，互相看到对方的番茄进度，形成同伴压力与陪伴。</p>
+      </div>
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">图书馆静音模式</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">关闭语音，只保留灯光与屏幕反馈，适配安静环境。</p>
+      </div>
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">考研 / 四六级专项陪伴</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">内置分阶段计划与倒计时里程碑，让长期备考有节奏感。</p>
+      </div>
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">学科知识库定向问答</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">针对具体学科注入知识库，把"什么都能聊"收窄成"这门课答得准"。</p>
+      </div>
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">本地密钥配置网页</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">在同一局域网内打开配置页，填入自己的密钥与偏好，不用改固件。</p>
+      </div>
+      <div class="card rounded-2xl p-6 rv">
+        <h3 class="text-[15.5px] font-semibold">对话上下文记忆优化</h3>
+        <p class="mt-2 text-[12.5px] leading-[1.75] text-white/54">记住今天问到哪、卡在哪，第二天接得上，而不是每次重新自我介绍。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="relative pt-20 pb-14 border-t border-white/[0.06] overflow-hidden">
+  <div class="absolute inset-x-0 bottom-0 h-[280px] bg-[radial-gradient(ellipse_60%_100%_at_50%_100%,rgba(53,229,178,.14),transparent_70%)] pointer-events-none"></div>
+  <div class="relative max-w-[1200px] mx-auto px-8 text-center">
+    <div class="mono text-[10.5px] tracking-[0.28em] text-white/26">中源黑客松 · 学习陪伴特别赛道</div>
+    <h2 class="mt-6 text-[40px] leading-tight font-semibold tracking-tight ttl-grad">身边的小问题，值得一个新产品</h2>
+    <p class="mt-4 text-[13.5px] text-white/46">学伴桌搭 · 让学习被看见、被回应、被坚持</p>
+    <div class="mt-10 flex items-center justify-center gap-6 text-[12px] text-white/30">
+      <span>学会得</span><span class="w-1 h-1 rounded-full bg-white/20"></span>
+      <span>少折腾</span><span class="w-1 h-1 rounded-full bg-white/20"></span>
+      <span>有回应</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.rv');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (e) { e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          var el = en.target;
+          var idx = Array.prototype.indexOf.call(items, el) % 4;
+          el.style.transitionDelay = (idx * 70) + 'ms';
+          el.classList.add('in');
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (e) { io.observe(e); });
+    setTimeout(function () {
+      items.forEach(function (e) { if (!e.classList.contains('in')) e.classList.add('in'); });
+    }, 2200);
+  })();
+</script>
+<script>
+  const deviceDemo = document.getElementById('device-demo');
+  deviceDemo.addEventListener('load', () => {
+    const card = deviceDemo.contentDocument.querySelector('.devcard');
+    const fit = () => { deviceDemo.style.height = Math.ceil(card.getBoundingClientRect().height) + 'px'; };
+    new ResizeObserver(fit).observe(card);
+    fit();
+  });
+</script>
+</body>
+</html>

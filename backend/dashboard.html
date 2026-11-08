@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学伴桌搭 · 电脑联调</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f3;color:#17251e;font:16px/1.55 system-ui,sans-serif}
+main{max-width:1024px;margin:auto;padding:32px 18px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:32px;margin:0}h2{font-size:18px;margin:0 0 12px}.muted{color:#526458}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:18px 0}
+section,details{background:white;border:1px solid #dbe4da;border-radius:14px;padding:18px;margin-bottom:12px}
+label{display:block;font-size:14px;margin:10px 0}input{display:block;width:100%;padding:8px;border:1px solid #a8b9ad;border-radius:6px}
+button{background:#145b40;color:#fff;border:0;border-radius:8px;padding:10px 14px;font:inherit;cursor:pointer}
+button:disabled{opacity:.6;cursor:default}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}
+dl{margin:0}dt{font-size:14px;color:#526458}dd{margin:0 0 9px;overflow-wrap:anywhere}#events{max-height:180px;overflow:auto}
+</style>
+<main>
+<header><div><h1>学伴桌搭 · 电脑联调</h1><div class="muted">常驻收音、云端回复与延迟</div></div><button id="speak">启用电脑播报</button></header>
+<div class="grid">
+<section><h2>设备</h2><dl>
+<dt>串口</dt><dd id="serial">连接中…</dd>
+<dt>麦克风</dt><dd id="mic">等待采样</dd>
+<dt>设备请求往返</dt><dd id="request">—</dd>
+<dt>设备执行结果</dt><dd id="action">—</dd>
+</dl></section>
+<section><h2>语音对话</h2><dl>
+<dt>状态</dt><dd id="stage">等待一轮语音</dd>
+<dt>识别文本</dt><dd id="transcript">—</dd>
+<dt>模型回复</dt><dd id="reply">—</dd>
+<dt>分段耗时</dt><dd id="timings">—</dd>
+</dl></section>
+</div>
+<details open><summary>配置 DeepSeek 和设备网络</summary>
+<form id="setup">
+<label>DeepSeek API Key（只在电脑后端内存保存）<input id="key" type="password" autocomplete="off"></label>
+<div class="grid"><label>设备 Wi-Fi 名称<input id="ssid" autocomplete="off"></label>
+<label>Wi-Fi 密码<input id="password" type="password" autocomplete="off"></label></div>
+<label>设备所在网段的参考地址，用于选出电脑的局域网 IP<input id="board" value="192.168.3.236"></label>
+<button>保存本次会话设置</button> <span id="setup-result" aria-live="polite"></span>
+</form>
+</details>
+<section><h2>试听普通话音色</h2><p class="muted">同一句话，用电脑试听。选择后才用于下一轮桌搭播报。</p>
+<div class="grid" id="samples"></div><p id="voice-choice" aria-live="polite"></p></section>
+<section><h2>只测模型</h2><p class="muted">不需要麦克风，也不会改变设备计时。</p>
+<form id="text-test"><label>输入一句话<input id="text" value="用一句话鼓励我继续学习" maxlength="500" required></label>
+<button>测试模型</button><p id="text-result" aria-live="polite"></p></form></section>
+<details><summary>设备事件</summary><pre id="events"></pre></details>
+</main>
+<script>
+const el=id=>document.getElementById(id);
+const put=(id,value)=>el(id).textContent=value;
+let audioOn=false, spoken=null;
+function speech(text){
+  const utterance=new SpeechSynthesisUtterance(text);
+  utterance.lang='zh-CN';
+  const voice=speechSynthesis.getVoices().find(v=>v.lang.toLowerCase().startsWith('zh'));
+  if(voice) utterance.voice=voice;
+  speechSynthesis.speak(utterance);
+}
+el('speak').onclick=()=>{
+  if(!('speechSynthesis' in window)){put('speak','浏览器不支持播报');return;}
+  audioOn=!audioOn; put('speak',audioOn?'关闭电脑播报':'启用电脑播报');
+  if(audioOn) speech('电脑播报已开启。'); else speechSynthesis.cancel();
+};
+async function post(path,value){
+  const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(value)});
+  if(!r.ok) throw Error('HTTP '+r.status);
+  return r.json();
+}
+el('setup').onsubmit=async event=>{
+  event.preventDefault();
+  try{
+    const r=await post('/setup',{key:el('key').value,ssid:el('ssid').value,password:el('password').value,board:el('board').value});
+    put('setup-result',r.ok?'配置已送出；连接结果看设备事件。':r.error);
+  }catch(e){put('setup-result',e.message)}
+  finally{el('key').value='';el('password').value='';}
+};
+el('text-test').onsubmit=async event=>{
+  event.preventDefault(); const button=event.target.querySelector('button');button.disabled=true;
+  put('text-result','模型处理中…');
+  try{
+    const r=await post('/text',{text:el('text').value});
+    put('text-result',r.reply?r.reply+' · '+r.model_ms+' ms':r.error);
+  }catch(e){put('text-result',e.message)}
+  finally{button.disabled=false;}
+};
+for(const [voice,name] of [['Huihui','慧慧 · 女声'],['Kangkang','康康 · 男声'],['Yaoyao','瑶瑶 · 女声']]){
+  const item=document.createElement('div');
+  const title=document.createElement('p'); title.textContent=name;
+  const sample=document.createElement('audio'); sample.controls=true; sample.preload='none'; sample.src='/sample/'+voice;
+  const button=document.createElement('button'); button.textContent='选用'+name.split(' · ')[0];
+  button.onclick=async()=>{
+    try{const r=await post('/voice-choice',{voice});put('voice-choice',r.ok?'已选择 '+name:r.error);}
+    catch(e){put('voice-choice',e.message);}
+  };
+  item.append(title,sample,document.createElement('br'),button);el('samples').append(item);
+}
+async function refresh(){
+  try{
+    const {events,turn,serial,configured,provider,local_stt,voice}=await (await fetch('/feedback')).json();
+    el('voice-choice').dataset.current=voice;
+    if(!el('voice-choice').textContent) put('voice-choice','当前测试音色：'+({Huihui:'慧慧',Kangkang:'康康',Yaoyao:'瑶瑶'})[voice]);
+    put('serial',serial+' · '+(configured?provider+' 已配置':provider+' 未配置')+' · '+(local_stt?'本地转写':'云端转写'));
+    put('events',events.slice(-20).reverse().map(x=>new Date(x.time*1000).toLocaleTimeString()+' '+x.line).join('\n'));
+    const last=prefix=>events.findLast(x=>x.line.startsWith(prefix))?.line.slice(prefix.length);
+    const latest=events.findLast(x=>x.line.startsWith('UI '))?.line;
+    const capture=last('UI capture ')?.split(' ');
+    put('mic',latest==='UI recording'?'正在收音，请说话…':capture?(capture[2]==='1'?'采集 '+capture[0]+' ms，PCM 峰值 '+capture[1]:'采集失败'):'等待采样');
+    const request=last('UI request ')?.split(' ');
+    const usb=last('UI usb_audio ')||last('UI usb ');
+    put('request',turn.transport==='usb'&&usb?usb+' ms · USB':request?request[0]+' ms · HTTP '+request[1]:'—');
+    const action=last('UI action ');
+    put('action',action||'—');
+    const names={transcription:'语音转文字',model:'模型思考',tts:'生成语音',ready:'回复已生成',error:'处理失败'};
+    put('stage',(names[turn.stage]||'等待一轮语音')+(turn.error?' · '+turn.error:''));
+    put('transcript',turn.text||'—');put('reply',turn.reply||'—');
+    const labels={stt:'转写',model:'模型',tts:'合成',backend:'后端总计'};
+    put('timings',Object.entries(turn.ms||{}).map(([k,v])=>labels[k]+' '+v+' ms').join(' · ')||'—');
+    if(turn.stage==='ready'&&turn.id!==spoken){
+      spoken=turn.id;
+      if(audioOn&&turn.reply) speech(turn.reply);
+    }
+  }catch{put('serial','电脑后端未连接');}
+  finally{setTimeout(refresh,300);}
+}
+refresh();
+</script>
+</html>
