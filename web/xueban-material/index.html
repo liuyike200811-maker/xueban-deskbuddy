@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1995,7 +1995,7 @@ html,body{margin:0;padding:0;background:transparent;overflow:hidden}
   try { savedTheme = localStorage.getItem('xueban-theme'); } catch (error) {
     console.info('主题偏好无法读取，本次仍可切换。', error.name);
   }
-  applyTheme(savedTheme === 'dark');
+  applyTheme(savedTheme !== 'light');
   themeToggle.addEventListener('click', () => {
     const dark = document.documentElement.dataset.theme !== 'dark';
     applyTheme(dark);
