@@ -185,6 +185,7 @@ body{font-family:var(--font-ui);font-size:16px;line-height:1.625}
 html[lang="en"] .hero h1,html[lang="en"] body h2,html[lang="en"] body h3{
   font-family:var(--font-display-en);font-weight:400;letter-spacing:-.025em
 }
+html[lang="en"] .hero h1,html[lang="en"] body h2{font-style:italic}
 .hero h1{font-size:clamp(54px,7.25vw,104px);line-height:1;margin-top:0}
 html[lang="en"] .hero h1{font-size:clamp(72px,7.25vw,104px);text-wrap:balance}
 .hero h1+p{font-family:var(--font-display-zh);font-size:clamp(25px,3vw,39px);line-height:1.18;font-weight:500;margin-top:16px}
@@ -2037,8 +2038,8 @@ html,body{margin:0;padding:0;background:transparent;overflow:hidden}
     updateThemeLanguage();
     deviceDemo.contentWindow.setDemoLanguage?.(lang);
   }
-  let language = 'zh-CN';
-  try { if (localStorage.getItem('xueban-language') === 'en') language = 'en'; }
+  let language = 'en';
+  try { if (localStorage.getItem('xueban-language') === 'zh-CN') language = 'zh-CN'; }
   catch (error) { console.info('Language preference unavailable.', error.name); }
   applyLanguage(language);
   deviceDemo.addEventListener('load', () => deviceDemo.contentWindow.setDemoLanguage(document.documentElement.lang));
